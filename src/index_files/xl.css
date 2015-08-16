@@ -1,0 +1,3371 @@
+
+
+
+
+/* 2014-12-04 */
+
+
+#header
+{
+	margin-bottom: 8px;
+}
+
+/*** ./feature/mod.css ***/
+/************ MODULE-DESIGN: DEFAULT  ************/
+
+.mod
+{
+	width: 100%;
+	float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+.mod .teaser
+{
+    float: left;
+    width: 100%;
+}
+
+.mod  .teaserHeadline
+{
+    font-size: 1.25em;
+    margin: 0 0 8px 0;
+    width: auto;
+    float: none;
+}
+
+.mod .ressort
+{
+    margin: 0;
+    padding: 0 0 8px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	width: 100%;
+	float: left;
+}
+
+.mod .mediaCon
+{
+    margin: 0 0 8px 0;
+    width: 100%;
+    float: left;
+}
+
+.mod  .portrait .mediaCon
+{
+    width: 50%;
+    float: none;
+    overflow: auto;
+    margin-left:  auto;
+    margin-right: auto;
+}
+
+.mod .media
+{
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.mod .mediaB
+{
+    width: 48%;
+    margin-left: 0.9%;
+    margin-right: 0.9%;
+}
+
+.mod .mediaC
+{
+    width: 31.333%;
+    margin-left: 0.9%;
+    margin-right: 0.9%;
+}
+
+.mod .mediaD
+{
+    width: 23%;
+    margin-left: 0.9%;
+    margin-right: 0.9%;
+}
+
+.mod .mediaLink{
+	width: 100%;
+	float: left;
+}
+
+.mod  .mediaCon .img
+{
+	float: left;
+	width: 100%;
+}
+
+.mod .icon
+{
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.mod .icon img
+{
+    width: 100%;
+}
+
+.mod .marke
+{ 
+	float: right;
+    margin-right: 4px;
+    margin-top: -72px;
+}
+
+
+.mod  .dachzeile
+{ 
+	margin: 0 0 4px 0;
+	width: 100%;
+	float: left;
+}
+
+.mod  .headline
+{	
+	font-size: 1.5em;
+	margin: 0 0 8px 0;	
+	width: 100%;
+	float: left;
+	font-weight: bold;
+}
+
+.mod .subtitle
+{
+    width: 100%;
+    float: left;
+}
+
+.mod  .teasertext
+{ 
+	margin: 0 0 12px 0;
+	width: 100%;
+	float: left;
+	line-height: 145%;
+}
+
+.mod .teasertext.colCnt2
+{
+	column-count: 2;
+    column-gap: 15px;
+	column-rule-color: #A3B5C1;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+	
+	-moz-column-count: 2;
+    -moz-column-gap: 15px;
+    -moz-column-rule-color: #A3B5C1;
+    -moz-column-rule-style: solid;
+    -moz-column-rule-width: 1px;
+	
+	-webkit-column-count: 2;
+	-webkit-column-gap: 15px;
+    -webkit-column-rule-color: #A3B5C1;
+    -webkit-column-rule-style: solid;
+    -webkit-column-rule-width: 1px;
+}
+
+.mod .text
+{
+    line-height: 145%;
+}
+
+.mod .linklist
+{ 
+	float: left;
+	margin: 0 0 12px 0;
+	width: 100%;	
+}
+
+.mod .linklist .more
+{ 	
+	clear: both;
+	margin: 0 0 10px 0;
+	width: 100%;
+}
+
+.mod .linklist .more strong
+{
+}
+
+.mod .linklist .list
+{ 
+	width: 100%;
+	float: left;
+	border-top: 1px solid #9dadc7;
+}
+
+.mod .linklist .list li
+{ 
+	width: 100%;
+	float: left;	
+	padding: 0 0 0 0;
+	border-bottom: 1px solid #9dadc7;
+}
+
+.mod .linklist .list li a
+{ 
+	padding: 6px 0;
+}
+
+.mod .linklist .list strong
+{ 
+	font-weight: bold;
+	
+}
+
+.livestreams .mod .linklist .list li 
+{
+	padding: 6px 0;
+}
+
+/************ MODULE-DESIGN: Collapse  ************/
+
+.mod .collapsed
+{
+    font-size: 1em;
+}
+
+.modParagraph .subtitle.collapsed {
+	font-size: 1.25em;
+}
+
+
+/*** ENDE ./feature/mod.css ***/
+/*** ./feature/modBreakingNews.css ***/
+.mod.modBreakingNews
+{
+}
+
+/* should be in L-View only */
+.sectionA .modA.mod.modBreakingNews .box
+{
+	width: 100%;
+	margin: 0 0 0 -2px;
+    padding: 8px 8px 4px;
+}
+
+
+.mod.modBreakingNews .ressort {
+    margin: -8px 0 0 -8px;
+    padding: 1px 8px;
+}
+
+/* should be in L-View only */
+.mod.modBreakingNews  .mediaCon
+{ 
+	width: 19%;
+	float: left;
+	margin: 8px 8px 4px 0;
+}
+
+.mod.modBreakingNews .dachzeile
+{ 	
+	margin: 4px 0 0 0;
+	width: 77%;
+	float: left;
+}
+
+.mod.modBreakingNews .headline
+{	
+	width: 77%;
+	float: left;
+	margin: 4px 0 0 0 ;
+}
+
+
+.mod.modBreakingNews .teasertext
+{ 
+	width: 77%;
+	float: left;
+}
+
+.mod.modBreakingNews .linklist
+{ 
+	display: none;
+}
+
+/************ MODULE-DESIGN: PAGING  ************/
+
+.mod .controls.buttonfield a.next:hover,
+.mod .controls.buttonfield a.prev:hover
+{
+    background: #396192;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#396192', endColorstr='#396192',GradientType=0 ); /* IE6-9 */
+    color: #fff;
+}
+
+/*** ENDE ./feature/modBreakingNews.css ***/
+/*** ./feature/modClassic.css ***/
+/************  MODULE-DESIGN: STAGE  ************/
+
+.modClassic  .mediaCon
+{
+    width: 45%;
+    margin-right: 1%;
+}
+
+.modClassic .dachzeile
+{
+    width: auto;
+    float: none;
+}
+
+.modClassic .headline
+{
+    width: auto;
+    float: none;
+}
+
+.modClassic  .teasertext
+{
+    width: 53%;
+    float: left;
+}
+
+.modClassic .linklist
+{
+    width: 100%;
+    float: left;
+    clear: right;
+}
+
+/*** ENDE ./feature/modClassic.css ***/
+/*** ./feature/modForm.css ***/
+/************  MODULE-DESIGN: FORMS  ************/
+
+
+.modConSearch #form .submitfield div.unitY .unitY input.textInput {
+    line-height: 25px;
+}
+
+#euform span.unitC
+{
+	margin: 8px 0 4px 0;
+	line-height: 100%;
+	text-indent: 3%;
+}
+
+/*** ENDE ./feature/modForm.css ***/
+
+/*** modThumbnail ***/
+.modThumbnail a.linkflaeche{
+	display: block;
+}
+
+.modThumbnail .dachzeile
+{
+    width: auto;
+    float: none;
+}
+
+.modThumbnail .headline
+{
+    width: auto;
+    float: none;
+}
+
+.modThumbnail  .teasertext
+{
+    width: auto;
+    float: none;
+}
+
+.modThumbnail .linklist
+{
+    width: 100%;
+    float: left;
+    clear: right;
+}
+
+
+.modThumbnail .mediaCon {
+    margin-right: 1%;
+    width: 25%;
+}
+
+.modThumbnail .dachzeile {
+    float: none;
+    width: auto;
+}
+
+.modThumbnail .headline {
+    float: none;
+    width: auto;
+}
+.modThumbnail .teasertext {
+    float: none;
+    width: auto;
+}
+.modThumbnail .linklist {
+    clear: right;
+    float: left;
+    width: 100%;
+}
+
+/*** ENDE modThumbnail ***/
+
+/*** ./feature/modGallery.jsp ***/
+
+/************  MODULE-DESIGN: PREMIUM  ************/
+
+.modGallery .ressort
+{
+	display : none;
+}
+
+.modGallery .dachzeile
+{ 	
+	display : none;
+}
+
+.modGallery .linklist
+{ 
+	display : none;
+}
+
+.mod.modGallery .media{
+	height: 798px;
+}
+
+
+/************ MODULE-DESIGN: SLIDER  ************/
+
+.mod.modGallery .controls.sliding 
+{
+    height: 140px;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 330px;
+    visibility: hidden;
+    z-index: 50;
+}
+
+/* positionsaenderung fuer Galerien im Beitrag */
+.sectionZ .mod.modGallery .controls.sliding
+{
+    top: 160px;
+}
+
+/*** ENDE ./feature/modGallery.jsp ***/
+/*** ./feature/modGlossar.css ***/
+/************  MODULE-DESIGN: STAGE  ************/
+
+.sectionZ .modA.modGlossar .box
+{
+/*	width: 848px; */
+}
+
+.modGlossar .collapsed
+{
+    font-size: 1.25em;
+}
+
+.modGlossar .link
+{
+    width: 75%;
+    float: left;
+}
+
+.modGlossar  .mediaCon .img
+{
+    width: auto;
+    height: 8em;
+}
+
+.modGlossar .dachzeile
+{ 
+	display:none;
+}
+
+.modGlossar .headline
+{
+    margin: 0 0 0 0;
+    width: 100%;
+}
+
+.modGlossar .headline.small
+{
+	margin-top: 8px;
+}
+
+/************ MODULE-DESIGN: SLIDER  ************/
+
+.modGlossar .controls .labels 
+{
+	margin: -40px 0 0 0;	
+}
+
+.modGlossar .controls .labels .entries {
+    padding: 0 18px 0 18px;
+}
+
+.modGlossar .controls .labels .entries .entry
+{
+    margin: 0 3px 3px 0;
+    width: 48px;
+}
+
+.modGlossar .controls .labels .entries .entry a
+{
+
+    padding: 7px 0 7px 0;
+    text-align: center;
+}
+/*** ENDE ./feature/modGlossar.css ***/
+/*** ./feature/modHead.css ***/
+/************ MODULE-DESIGN: HEAD  ************/
+
+.modHead .info
+{
+	width: auto;
+	float: right;
+	clear: right;	
+}
+
+.modHead .headline
+{
+	width: auto;
+	float: left;
+	clear: left;
+}
+
+.modHead .subline
+{
+	width: auto;
+	float: left;
+	clear: left;
+}
+
+.modHead .link
+{
+	width: auto;
+	float: right;
+	clear: right;	
+}
+/*** ENDE ./feature/modHead.css ***/
+/*** ./feature/modHeadline.css ***/
+/************  MODULE-DESIGN: STAGE  ************/
+
+.modHeadline .ressort
+{		
+	display:none;
+}
+
+.modHeadline  .mediaCon
+{	
+	display:none;
+}
+
+.modHeadline .dachzeile
+{ 
+	display:none;
+}
+
+.modHeadline  .teasertext
+{ 
+	display:none;
+}
+
+.modHeadline .linklist .more
+{  
+	display:none;
+}
+
+/*** ENDE ./feature/modHeadline.css ***/
+/*** ./feature/modList.css ***/
+/************  MODULE-DESIGN: STAGE  ************/
+
+.modList .teaser
+{
+    padding-top: 8px;
+}
+
+.modList  .mediaCon
+{
+    width: 25%;
+    margin-top: 8px;
+}
+
+.modList  .mediaCon .img
+{
+    width: 100%;
+}
+
+.modList .dachzeile
+{ 
+	width: 74%;
+    float: right;
+    font-size: 0.9em;
+    margin-bottom: 4px;
+}
+
+.modList .headline
+{
+    width: 74%;
+    float: right;
+    margin-bottom: 4px;
+}
+
+.modList  .teasertext
+{
+    width: 74%;
+    float: right;
+    margin-bottom: 4px;
+}
+
+.modList .linklist
+{
+    width: 74%;
+    float: right;
+    margin-bottom: 0px;
+}
+
+.modList .linklist .list
+{
+    border-top: none;
+}
+
+.modList .linklist .list li
+{
+    border-bottom: none;
+    font-size: 0.9em;
+    padding: 4px 0 0;
+}
+
+.modList .linklist .list li a
+{
+    color: #516384;
+}
+
+/*** ENDE ./feature/modList.css ***/
+/*** ./feature/modMini.css ***/
+/************ MODULE-DESIGN: MINI  ************/
+
+.modConStage .modMini .active
+{
+    /*display: none;*/
+}
+
+.modConStage .modMini .box
+{
+    background-color: #E0EAF0;
+}
+
+.modMini .teaser
+{
+	background-image: url('') !important;
+}
+
+.modMini .ressort
+{ 
+	display: none;
+}
+
+.modMini .marke
+{ 
+    display: none;
+}
+
+.modMini   .headline
+{
+	font-size: 1.25em;
+}
+
+.modMini  .teasertext
+{ 
+	display: none;
+}
+
+.modMini .linklist
+{ 
+	display: none;
+}
+
+/*** ENDE ./feature/modMini.css ***/
+/*** ./feature/modPaging.jsp ***/
+
+/************  MODULE-DESIGN: STAGE  ************/
+
+.modPaging .paging
+{
+    width: 100%;
+    float: left;
+}
+
+.modPaging  .text
+{ 
+    width: 100%;
+    float: left;
+    margin-bottom: 8px;
+}
+
+.modPaging .linklist .list
+{ 
+    border-top: none;
+
+}
+
+.modPaging .linklist .list li
+{
+    width: auto;
+    float: left;
+    border-bottom: none;
+    padding: 1%;
+    background-color: #eee;
+    margin-left: 1px;
+}
+
+.modPaging .next
+{
+    background: url('../img/base/icon/arrow_sprite.png') no-repeat 0 0;
+    width: 30px;
+    height: 30px;
+    float: right;
+}
+
+.modPaging .prev
+{
+    background: url('../img/base/icon/arrow_sprite.png') no-repeat 0 -100px;
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+
+.modConSearch .modPaging .linklist .list li
+{
+    font-size: 1.2em;
+    padding: 8px 14px;
+};
+
+.modConSearch .modPaging  .linklist
+{
+    float: none;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.modConSearch .modPaging .linklist
+{
+    float: none;
+    margin: 0 auto;
+    width: 50%;
+}
+
+
+.modConGlossar .modPaging .list li.active
+{
+    background-color: #fff;
+}
+
+
+.modConGlossar .modPaging .loadNameInfo
+{
+    float: left;
+    font-size: 1.2em;
+    margin: 0 0 4px 0;
+    padding-left: 1%;
+    width: 98%;
+}
+/*** ENDE ./feature/modPaging.jsp ***/
+/*** ./feature/modParagraph.css ***/
+/************  MODULE-DESIGN: STAGE  ************/
+
+.modParagraph
+{
+    font-size: 110%;
+
+}
+
+.modParagraph .mediaCon
+{
+    float: left;
+    margin-bottom: 4px;
+    margin-top: 1%;
+    overflow: auto;
+    width: 100%;
+}
+
+.modParagraph .mediaCon.small
+{
+    margin-left: 4%;
+    margin-right: 4%;
+    width: 96%
+}
+
+.modParagraph .media
+{
+    width: 98%;
+    margin-bottom: 4px;
+    margin-left: 0.9%;
+    margin-right: 0.9%;
+}
+
+.modParagraph .mediaA
+{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.modParagraph .small .mediaA
+{
+    width: 98%;
+    margin-left: 0.9%;
+    margin-right: 0.9%;
+}
+
+.modParagraph .mediaB
+{
+    width: 48%;
+}
+
+.modParagraph .mediaC
+{
+    width: 31.33%;
+}
+
+.modParagraph .mediaD
+{
+    width: 23%;
+}
+
+.modParagraph .mediaCon.mediaRight
+{	
+   width: 364px;
+   float: right;
+   clear: right;
+}
+
+.modParagraph .mediaCon.mediaLeft
+{
+    width: 364px;
+    float: left;
+    clear: left;
+}
+
+.modParagraph .mediaCon.mediaLeft.small
+{
+    margin-left: 5%;
+}
+
+.modParagraph .mediaCon.mediaRight.small
+{
+    margin-right: 5%;
+    margin-left: 16px;
+}
+
+.modParagraph .mediaCon.mediaRight .mediaA, .modParagraph .mediaCon.mediaLeft .mediaA{
+	margin: 0;
+	width: 100%;
+}
+
+.modParagraph .mediaCon.mediaTop.small {
+    float: left;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 92%;
+}
+
+/*
+.modParagraph .mediaInfo .galerie img:hover {
+    cursor: -moz-zoom-in;
+    cursor: -webkit-zoom-in;
+    cursor: -o-zoom-in;
+    cursor: -ms-zoom-in;
+}*/
+
+.modParagraph .dachzeile
+{
+    width: auto;
+    float: none;
+}
+
+.modParagraph .headline
+{
+    width: auto;
+    float: none;
+}
+
+.modParagraph .subtitle
+{
+    margin: 0 0 8px;
+    width: auto;
+    float: none;
+}
+
+.modParagraph  .einleitung
+{
+    margin: 0 0 8px 0;
+    width: auto;
+    float: none;
+	font-weight: bold;
+}
+
+.modParagraph  .text
+{
+    margin: 0 0 8px 0;
+    width: 90%;
+    float: none;
+}
+
+.modParagraph  .autor
+{
+    font-style: italic;
+    margin: 0 0 8px 0;
+    width: auto;
+    float: none;
+}
+
+.modParagraph .autorenzeile
+{
+	margin-top: 20px;
+	margin-bottom: 20px; 
+}
+
+
+.modParagraph .small
+{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.infokasten .teasertext 
+{
+	margin: 0;
+}
+
+.infokasten.right .teasertext 
+{
+	margin-bottom: 12px;
+}
+
+.sectionZ .modParagraph .articlePageList
+{
+    margin: 6px 5% 10px 5%;
+    width: 90%;
+}
+
+.sectionZ .modParagraph .controls.buttonfield
+{
+    margin: 6px 5% 16px 5%;
+    width: 90%;
+}
+
+/************* Infokasten Sendungsbezug  ************/
+
+.modParagraph .infokasten.sendungsbezug 
+{
+	background: url('../img/base/icon/sendebezug.png') no-repeat scroll 8px center #e9e9e9;
+	padding: 16px 2% 14px 6%;
+	width: 82%;
+}
+
+/************* Infokasten Rss-Feed  ************/
+
+.modParagraph .infokasten.rssfeed 
+{
+	background: url('../img/base/icon/rssfeed.png') no-repeat scroll 8px center #e9e9e9;
+	padding: 16px 2% 14px 6%;
+	width: 82%;
+}
+
+/*** ENDE ./feature/modParagraph.css ***/
+/*** ./feature/modPicture.css ***/
+/************  MODULE-DESIGN: STAGE  ************/
+
+.modPicture .ressort
+{		
+	display:none;
+}
+
+.modPicture  .mediaCon
+{	
+	margin: 0;
+}
+
+.modPicture .dachzeile
+{ 
+	display:none;
+}
+
+.modPicture .headline
+{ 
+	display:none;
+}
+
+.modPicture  .teasertext
+{ 
+	display:none;
+}
+
+.modPicture .linklist
+{ 
+	display:none;
+}
+
+/*** ENDE ./feature/modPicture.css ***/
+/*** ./feature/modPremium.css ***/
+/************  MODULE-DESIGN: PREMIUM  ************/
+
+.modPremium  .mediaCon
+{ 
+	width: 50%;
+}
+
+.modPremium .dachzeile
+{ 	
+	font-size: 1em;
+	width: 49%;
+	float: right;
+	clear: right;
+}
+
+.modPremium .headline
+{
+	font-size: 1.5em;
+	width: 49%;
+	float: right;
+	clear: right;
+}
+
+.modPremium .teasertext
+{ 
+	width: 49%;
+	width: 49%;
+	float: right;
+	clear: right;
+}
+
+.modPremium .linklist
+{ 
+	float: right;
+	width: 49%;
+	width: 49%;
+	float: right;
+	clear: right;
+}
+
+/*** ENDE ./feature/modPremium.css ***/
+/*** ./feature/modQuiz.css ***/
+/************  MODULE-DESIGN: STAGE  ************/
+
+.modQuiz
+{
+    font-size: 1.25em;
+    color: #24324C;
+}
+
+.modQuiz .resultTable
+{
+    float: left;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 8px;
+    table-layout: auto;
+}
+
+.modQuiz .resultTable th.answerHeader
+{
+	width: 17%;
+}
+
+.modQuiz .resultTable .entry
+{
+    vertical-align: top;
+    padding-top: 8px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.modQuiz .resultTable .even
+{
+    background-color: #eee;
+}
+
+.modQuiz .resultTable .answer
+{
+    border: none;
+    text-align: left;
+    padding: 0 0 8px 0;
+}
+
+.modQuiz .resultTable .entry .mediaCon
+{
+	border: none;
+	margin: 0;
+}
+
+.modQuiz .resultTable .headlines .entry
+{
+    border-bottom: 1px solid #24324C;
+    vertical-align: bottom;
+    padding-left: 1%;
+}
+
+.modQuiz .resultTable .data .entry
+{
+	padding: 8px 8px 0px 16px;
+}
+
+.modQuiz .resultTable .question
+{
+    border: none;
+    text-align: left;
+    padding: 0;
+}
+
+.modQuiz .resultTable .right
+{
+    color: #080;
+}
+
+.modQuiz .resultTable .wrong
+{
+    color: #800;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.modQuiz .resultTable .corrected
+{
+    font-style: italic;
+    font-weight: normal;
+}
+
+.modQuiz .text
+{
+    line-height: 125%;
+    width: 100%;
+    float: left;
+}
+
+.modQuiz .link
+{
+    width: auto;
+    float: right;
+    margin-bottom: 36px;
+    margin-top: 16px;
+    margin-left: 30px;
+    padding: 0.5% 1%;
+    background-color:  #eee;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px;
+}
+
+.modQuiz .link.quizPre.quizStart
+{
+	float: left;
+}
+
+.modQuiz .dachzeile
+{ 
+	margin: 0 30px 4px 30px;
+	width: auto;
+	clear: left;
+}
+
+.modQuiz h3.headline
+{ 
+	margin: 0 30px 6px 30px;
+	width: auto;
+	clear: left;
+	font-size: 1.8em;
+}
+
+.modQuiz  .teasertext
+{ 
+	margin: 0 30px 8px 30px;
+	width: auto;
+	clear: left;
+}
+
+.modQuiz  .answer
+{
+    border-bottom: 1px solid #DDDDDD;
+    float: left;
+    width: 99%;
+    padding: 1.5% 0 1.5% 1%;
+}
+
+.modQuiz  .wrong
+{
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.modQuiz .textResults
+{
+    float: left;
+    width: 49%;
+    border-right: 1px solid #eee;
+    clear: left;
+}
+
+.modQuiz .visualResults
+{
+    float: right;
+    width: 49%;
+    clear: right;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.modQuiz .unit
+{
+    float: left;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.modQuiz .unit.quizEntry,
+.modQuiz .unit.quizAfter
+{
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.modQuiz .unit .mediaCon
+{
+    margin-top: 8px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 36px;
+}
+
+.modQuiz .unit .mediaCon .imgLink img
+{
+	padding: 1%;
+	border: 1px solid #DDDDDD;
+}
+
+.modQuiz .resultBar
+{
+    height: 15px;
+    width: 100%;
+    float: left;
+    background-color: #800;
+    margin-top: 8px;
+}
+
+.modQuiz .resultLevel
+{
+    height: 100%;
+    float: left;
+    background-color: #080;
+}
+
+.modQuiz .question, .modQuiz .result
+{
+    border-bottom: 1px solid #DDDDDD;
+    border-top: 1px solid #DDDDDD;
+    float: left;
+    line-height: 150%;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    width: 100%;
+}
+
+.modQuiz .result.quizResult{
+	width: 95%;
+	padding-left: 5%;
+}
+
+.modQuiz .question
+{
+	text-align: left;
+    width: 95%;
+	font-weight: bold;
+	padding: 36px 0 36px 5%;
+}
+
+.modQuiz .progress
+{
+    float: left;
+    margin-top: 30px;
+    width: 90%;
+    margin: 0 5%;
+    overflow: hidden;
+}
+
+.modQuiz .progressText
+{
+    width: 100%;
+    float: left;
+    color: #AAAAAA;
+}
+
+.modQuiz .answer .link
+{
+    background-color: transparent;
+    float: right;
+    margin: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 94%;
+    padding: 0;
+    border: none;
+}
+
+.modQuiz .label
+{
+    background-color: #EEEEEE;
+    float: left;
+    text-align: center;
+    width: 4%;
+    padding: 0.5% 0;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.modQuiz .media .label
+{
+    position: relative;
+    top: 27px;
+    left: 2px;
+    width: 1.25em;    
+}
+
+.modQuiz .result .wrong
+{
+    color: #800;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.modQuiz .result .rigth
+{
+    color: #080;
+}
+
+.modQuiz .progressVisual
+{
+    float: left;
+    height: 8px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.modQuiz .progressVisual .active
+{
+    height: 100%;
+    float: left;
+}
+
+.modQuiz .progressVisual .right
+{
+    height: 100%;
+    float: left;
+}
+
+.modQuiz .progressVisual .wrong
+{    
+    height: 100%;
+    float: left;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.modQuiz .progressEntry
+{
+    height: 100%;
+    float: left;
+}
+
+.modQuiz .progressEntry .progressIdx
+{
+	text-align: center;
+	margin-bottom: -0.2em;
+	color: #AAAAAA;
+}
+
+.modQuiz .progressEntry .progressBorder,
+.modQuiz .progressEntry .progressColor
+{
+	height: 6px;
+	border-top: 1px solid #AAAAAA;
+	border-right: 1px solid #AAAAAA;
+	border-bottom: 1px solid #AAAAAA;
+}
+
+.modQuiz .progressEntry:first-child .progressBorder,
+.modQuiz .progressEntry:first-child .progressColor{
+	border-left: 1px solid #AAAAAA;
+}
+
+.modQuiz .progressEntry .progressBorder
+{
+	border-top: none;
+	border-bottom: none;	
+}
+
+.modQuiz .progressEntry.right .progressColor
+{
+	background-color: #008800;
+}
+
+.modQuiz .progressEntry.wrong .progressColor
+{
+	background-color: #880000;
+}
+
+.modQuiz .linklist
+{
+    margin-top: 8px;
+}
+
+.modQuiz .linklist .more
+{  
+	font-family: ThesisAntiqua, Times, serif;
+	text-transform: uppercase;
+}
+
+.modQuiz .linklist .more strong
+{ 
+	font-weight: bold;
+}
+
+/*** modQuiz poll ***/
+/*
+.modQuiz .poll h3.headline
+{
+	margin: 0 0 20px 0;
+}*/
+
+/*** ENDE ./feature/modQuiz.css ***/
+
+/*** ./feature/modSocialbar.css ***/
+/************ MODULE-DESIGN: DEFAULT  ************/
+
+.modSocialbar li.shareCon ul.shares {
+	top: 38px;
+}
+
+.modSocialbar ul.social .collapseArrow {
+	margin-top: 8px;
+}
+
+.mod.modSocialbar {  }
+.modSocialbar .box {  }
+.modSocialbar .button {  }
+.modSocialbar .button  { }
+
+/* setwidth */
+.modSocialbar .print a
+{  	
+	width: 132px;
+}
+
+/* setwidth */
+.modSocialbar .send a
+{ 
+	width: 132px;
+}
+
+/* setwidth */
+.modSocialbar .likeCon
+{
+    width: 462px;
+    height: 34px;
+}
+
+.modSocialbar li.likeCon {
+	height: 38px;
+}
+
+.modSocialbar li.likeCon .agreement {
+    top: 38px;
+}
+
+.modSocialbar .likeCon iframe { }
+.modSocialbar .likeCon iframe.iframefb { }
+.modSocialbar .likeCon iframe.iframetw { }
+.modSocialbar .likeCon iframe.iframegp { }
+.modSocialbar .agreeCon { }
+.modSocialbar .like
+{
+    width: 462px;
+}
+
+.modSocialbar .like a, .modSocialbar .share a { }
+
+/* setwidth */
+.modSocialbar .agreement
+ {
+    top: 34px;
+    width: 452px;
+ }
+
+.modSocialbar .agreement .text { }
+.modSocialbar .agree { }
+.modSocialbar .agreement strong { }
+.modSocialbar .likes { }
+.modSocialbar .likes > * { }
+.modSocialbar .shareCon { }
+
+/* setwidth */
+.modSocialbar .share
+{
+    width: 180px;
+}
+
+/* das ist die ul der shares, 10px schmaler!  */
+.modSocialbar .shares
+{
+    width: 170px;
+}
+
+.modSocialbar .shares li:last-child { }
+.modSocialbar .shares li { }
+.modSocialbar .like .fb, 
+.modSocialbar .like .twitter,
+.modSocialbar .like .google
+{
+	margin: 8px 12px 0 0;
+}
+
+.modSocialbar li.likeCon .like .fb, 
+.modSocialbar li.likeCon .like .twitter,
+.modSocialbar li.likeCon .like .google
+{
+	margin: 11px 12px 0 0;
+}
+
+
+
+.modSocialbar .like .fb { }
+.modSocialbar .like .twitter { }
+.modSocialbar .like .google { }
+
+.modSocialbar .shares li a
+{
+    width: 144px;
+}
+
+.modSocialbar .shares li:hover {}
+.modSocialbar .shares .fb { }
+.modSocialbar .shares .twitter { }
+.modSocialbar .shares .google { }
+.modSocialbar .shares .del { }
+.modSocialbar .shares .wong { }
+
+/* heller Pfeil, wenn auf dunkelblau */
+
+.modSocialbar .collapseArrow  { }
+
+.modSocialbar .hasArrow.collapsed .collapseArrow
+{ }
+
+
+/* Zusatzanweisungen fuer bestimmte Layouts */
+
+
+/* Der Drucken-Button */
+.sectionB .modSocialbar .print a
+{
+	width: 92px;
+}
+
+/* Der Senden-Button */
+.sectionB .modSocialbar .send a
+{
+	width: 82px;	
+}
+
+/* Der Teilen-Button */
+.sectionB .modSocialbar .share
+{
+    width: 140px;
+    margin-right: 2px;
+}
+/* hier 5px padding beachten */
+.sectionB .modSocialbar ul.shares
+{
+	width: 130px;
+	top: 34px;
+}
+
+.sectionB .modSocialbar ul.shares li
+{
+	width: 130px;
+}
+
+.sectionB .modSocialbar ul.shares li a
+{
+	width: 104px;
+}
+
+/* Das container fuer die sm-dienste */
+.sectionB .modSocialbar .likeCon
+{
+	width: 352px;
+}
+
+.sectionB .modSocialbar .like
+{
+	width: 352px;
+}
+
+/* Das agreement fuer die Dienste */
+.sectionB .modSocialbar .agreement
+{
+    width: 342px;
+    padding: 8px 5px 8px 5px;
+}
+
+
+/*** ENDE ./feature/modSocialbar.css ***/
+/*** ./feature/modStage.css ***/
+/************  MODULE-DESIGN: STAGE  ************/
+
+.modStage .background
+{
+    display: block;
+}
+
+.modStage .backgroundImg
+{
+    top: 30px;
+}
+
+.modStage  .mediaCon
+{	
+	width: 50%;
+}
+
+.modStage .dachzeile
+{ 
+	width: 49%;	
+	float: right;
+	clear: right;
+}
+
+.modStage .headline
+{ 
+	width: 49%;	
+	float: right;
+	clear: right;
+}
+
+.modStage  .teasertext
+{ 
+	width: 49%;	
+	float: right;
+	clear: right;
+}
+
+.modStage .linklist
+{ 
+	width: 49%;	
+	float: right;
+	clear: right;
+}
+
+
+/*** ENDE ./feature/modStage.css ***/
+/*** ./feature/modStopper.css ***/
+/************  MODULE-DESIGN: STAGE  ************/
+
+.modStopper .ressort
+{		
+	display:none;
+}
+
+.modStopper  .mediaCon
+{	
+	margin: 0;
+}
+
+.modStopper .viewB .mediaCon
+{
+    width: 50%;
+}
+
+.modStopper .viewC .mediaCon
+{
+    width: 75%;
+}
+
+.modStopper .dachzeile
+{ 
+	display:none;
+}
+
+.modStopper .headline
+{ 
+	display:none;
+    font-family: Thesis;
+}
+
+.modStopper .viewB .headline
+{
+    display:block;
+    width: 49%;
+    float: right;
+}
+
+.modStopper .viewC .headline
+{
+    display:block;
+    width: 24%;
+    float: right;
+}
+
+.modStopper  .teasertext
+{ 
+	display:none;
+    font-family: Thesis;
+}
+
+.modStopper .viewB .teasertext
+{
+    display:block;
+    width: 49%;
+    float: right;
+}
+
+.modStopper .viewC .teasertext
+{
+    display:block;
+    width: 24%;
+    float: right;
+}
+
+.modStopper .linklist
+{ 
+	display:none;
+}
+
+/*** ENDE ./feature/modStopper.css ***/
+/*** ./feature/modTable.css ***/
+
+.modParagraph .modTable 
+{
+	margin-top: 36px;
+}
+
+.modTable .table
+{
+	margin-bottom: 36px;
+}
+
+.modTable .headline.small
+{
+	margin-top: 8px;
+}
+
+.modTicker .linklist ul.liveticker a {
+	padding: 0;
+}
+
+.modTicker .linklist ul.liveticker li span.paarung {
+
+    padding: 6px 0 6px 0;
+
+}
+.modTicker .linklist ul.liveticker li span.result {
+    /* background: #cee6f5; */
+
+    padding: 6px 0 6px 0;
+
+
+}
+.modTicker .linklist ul.liveticker li span.result.live, 
+.modTicker .linklist ul.liveticker li span.result.finished 
+{
+    letter-spacing: 2px;
+}
+
+.modTable table tr.quelle td {
+	padding: 1% 5% 1% 2%;
+}
+
+/*** ENDE ./feature/modTable.css ***/
+/*** ./feature/modTagcloud.css ***/
+/************  MODULE-DESIGN: STAGE  ************/
+
+.modTagcloud .linklist .list
+{
+    border: none;
+}
+
+.modTagcloud .linklist .list li
+{
+    border: none;
+    width: auto;
+    padding-right: 12px;
+    display: table;
+    float: left;
+}
+
+.modTagcloud .linklist .list li a
+{
+    display: table-cell;
+    vertical-align: bottom;
+    height: 30px;
+    padding: 0;
+}
+
+
+.modTagcloud .linklist .list li a:hover,
+.modTagcloud .linklist .list li a:active,
+.modTagcloud .linklist .list li a:focus
+
+{
+	padding: 0;
+	display: table-cell;
+
+}
+
+
+
+/************ MODULE-DESIGN: SLIDER  ************/
+
+.modTagcloud .controls .labels .entries
+{
+    padding: 0 8px 0 8px;
+}
+/*** ENDE ./feature/modTagcloud.css ***/
+
+/*** Börsenbox ***/
+
+
+/************* modIFrame ************/
+
+.modIFrame .legende
+{
+	margin-bottom: 6px;
+}
+
+.legende .button a
+{
+	padding: 16px 12px;
+}
+
+/*** ./feature/modTeaseronly.css ***/
+/************  MODULE-DESIGN: STAGE  ************/
+
+.modTeaseronly .linklist
+{ 
+	display:none;
+}
+
+.sectionA .modC.modTeaseronly .box
+{
+	margin-top: 8px;
+	background-color: transparent;
+}
+
+.sectionA .modC.modTeaseronly
+{
+	margin-top: -6px;
+}
+
+
+/*** ENDE ./feature/modTeaseronly.css ***/
+
+/*** ./feature/page.css ***/
+body
+{
+	font-size: 110%;
+}
+
+
+/************ PAGE-DESIGN  ************/
+
+.conHeadline
+{
+	font-size: 1.85em;		
+	line-height: 120%;	
+	margin: 0 0 0 0;
+    width: 98.4%;
+    padding: 8px 0.75% 2px 0.75%;
+	float: left;
+	color: #001a4b;
+	font-weight: normal;
+}
+
+.sectionB .conHeadline
+{
+    width: 98%;
+    padding: 6px 1% 6px 1%;
+
+}
+
+.sectionZ .conHeadline {
+    width: 98%;
+    padding: 6px 1% 6px 1%;
+}
+
+.sectionB .conHeadline {
+    width: 97%;
+    padding: 6px 1.5% 6px 1.25%;
+}
+
+
+.sectionC .conHeadline 
+{
+    width: 96%;
+    padding: 5px 2% 6px 2%;
+}
+
+.button a
+{
+    float: left;
+	padding:  8px 12px;
+}
+/*
+a:focus, input:focus, select:focus{
+    outline: #ff6400 solid 2px;
+    outline-offset: -2px;
+}*/
+/*** ENDE ./feature/page.css ***/
+
+/*** ./footer.css ***/
+/**** GRID ****/
+#footer
+{
+	width: 100%;
+	float: left;
+	margin-top: 20px;
+	padding-top: 30px;
+    padding-bottom: 12px;
+    background-color: #001A4B;
+    font-size: 1em;
+}
+
+#footer .section
+{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 4px;
+}
+
+#footer a{
+	color: #FFFFFF;
+	font-size: 0.9em;
+}
+
+#footer li
+{
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+
+#footer h3{
+    color: #FFFFFF;
+}
+
+#footer .foot
+{
+    float: left;
+    width: 100%;
+    padding-top: 24px;
+    position: relative;
+}
+
+#footer .help
+{
+    float: left;
+    width: 100%;
+}
+
+#footer .help li
+{
+    float: left;
+    margin-right: 8px;
+}
+
+#footer .logo
+{
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+#footer .logo img
+{
+    margin-bottom: 6px;
+}
+
+#footer .copy
+{
+	color: #FFFFFF;
+	font-size: 0.9em;
+    float: left;
+    width: 100%;
+}
+/*** ENDE ./footer.css ***/
+/*** ./grid.css ***/
+/* PAGE LAYOUT */
+
+body
+{
+    overflow-x: hidden;
+}
+
+.wrapper
+{
+	width: 1440px;
+	margin: 0 auto 0 auto;
+}
+
+/* CONTENT */
+
+#content 
+{ 
+	width: 100%;
+	float: left;
+}
+
+.con
+{
+	float: left;
+	width: 100%;
+	margin: 12px 0 0 0;
+    background-color: #fff;
+}
+
+.sectionArticle .con
+{
+  margin: 8px 0 0 0;
+}
+
+.con:first-child
+{
+    margin-top: 0;
+}
+
+.sectionC .con 
+{
+	margin-top: 8px;
+}
+
+.sectionC h3.ressort
+{
+	line-height: 1em;
+}
+
+.modCon
+{	
+	width:100%;
+	float: left;
+    background-color: #fff;
+}
+
+.boxCon
+{
+	width: 100%;
+	float: left;
+}
+
+.col
+{	
+	float: left;
+	width: 100%;
+}
+
+
+/* Teaser LAYOUT */
+
+.teaser
+{
+    float: none;
+    overflow: visible; 
+    width: auto;
+}
+
+/*** meldungsteaser flach ***/
+
+.mod.tsTeaser .teaser {
+	margin-top: 6px;
+}
+
+.mod.tsTeaser:first-child .teaser {
+	margin-top: 0;
+}
+
+.mod.tsTeaser .mediaCon {
+	width: 458px;
+	margin-right: 1.2%;
+}
+
+.mod.tsTeaser .dachzeile, .mod.tsTeaser .headline, .mod.tsTeaser .teasertext {
+	width: 65.7%
+}
+
+/*** Ende meldungsteaser flach ***/
+
+/* SECTION LAYOUT */
+
+.section
+{
+    float: left;
+    width: 100%;
+    margin: 8px;
+    padding: 0px;
+}
+
+
+.sectionArticle
+{
+  background-color: #fff;
+}
+
+/* BOX LAYOUT */
+
+.box
+{
+    margin: 0px;
+    padding: 8px;
+    width: 100%;
+    float: left;
+}
+
+
+/* MODULE LAYOUTS - SECTION A */
+
+.sectionA
+{
+    width: 1424px;
+}
+
+.sectionA .modA .box
+{
+    width: 1408px;
+}
+
+.sectionA .modB .box
+{
+    width: 696px;
+}
+
+.sectionA .modC .box
+{
+    width: 458px;
+}
+
+.sectionA .modD .box
+{
+    width: 340px;
+}
+
+.sectionA .modE .box
+{
+    width: 268px;
+}
+
+.sectionA .modZ .box
+{
+    width: 933px;
+}
+
+
+
+/* MODULE LAYOUTS - SECTION B */
+
+.sectionB
+{
+    width: 704px;
+}
+
+.sectionB .modA .box
+{
+    width: 688px;
+}
+
+.sectionB .modB .box
+{
+    width: 336px;
+}
+
+.sectionB .modC .box
+{
+    width: 218px;
+}
+
+.sectionB .modD .box
+{
+    width: 160px;
+}
+
+.sectionB .modE .box
+{
+    width: 124px;
+}
+
+.sectionB .modZ .box
+{
+    width: 453px;
+}
+
+
+
+/* MODULE LAYOUTS - SECTION C */
+
+.sectionC
+{
+    width: 464px;
+}
+
+.sectionC .modA .box
+{
+    width: 448px;
+}
+
+.sectionC .modB .box
+{
+    width: 216px;
+}
+
+.sectionC .modC .box
+{
+    width: 138px;
+}
+
+.sectionC .modD .box
+{
+    width: 100px;
+}
+
+.sectionC .modE .box
+{
+    width: 76px;
+}
+
+.sectionC .modZ .box
+{
+    width: 293px;
+}
+
+
+
+/* MODULE LAYOUTS - SECTION D */
+
+.sectionD
+{
+    width: 344px;
+}
+
+.sectionD .modA .box
+{
+    width: 328px;
+}
+
+.sectionD .modB .box
+{
+    width: 156px;
+}
+
+.sectionD .modC .box
+{
+    width: 98px;
+}
+
+.sectionD .modD .box
+{
+    width: 70px;
+}
+
+.sectionD .modE .box
+{
+    width: 52px;
+}
+
+.sectionD .modZ .box
+{
+    width: 213px;
+}
+
+
+
+/* MODULE LAYOUTS - SECTION E */
+
+.sectionE
+{
+    width: 272px;
+}
+
+.sectionE .modA .box
+{
+    width: 256px;
+}
+
+.sectionE .modB .box
+{
+    width: 120px;
+}
+
+.sectionE .modC .box
+{
+    width: 74px;
+}
+
+.sectionE .modD .box
+{
+    width: 52px;
+}
+
+.sectionE .modE .box
+{
+    width: 38px;
+}
+
+.sectionE .modZ .box
+{
+    width: 165px;
+}
+
+
+
+/* MODULE LAYOUTS - SECTION Z */
+
+.sectionZ
+{
+    width: 944px;
+}
+
+.sectionZ .modA.modClassic .teaser
+{
+    margin-top: 8px;
+}
+
+.sectionZ .modA .box
+{
+    width: 928px;
+}
+
+.sectionZ.sectionArticle .modA .box .mediaTop:first-child
+{
+	margin-top: 0px;
+}
+
+.sectionZ .modB .box
+{
+    width: 456px;
+}
+
+
+.sectionZ .modParagraph .modB .box
+{
+    width: 448px;
+}
+
+.sectionZ .modParagraph .inline .modB .box
+{
+    width: 402px;
+}
+
+
+.sectionZ .modB .teaser
+{
+	margin-top: 8px;
+}
+
+.sectionZ .modC .box
+{
+    width: 298px;
+}
+
+.sectionZ .modParagraph .modC .box
+{
+    width: 301px;
+    padding: 4px;
+}
+
+.sectionZ .modParagraph .inline .modC .box
+{
+    width: 270px;
+    padding: 4px;
+}
+
+.sectionZ .modParagraph .inline .modC {
+    width: 834px;
+}
+
+
+.sectionZ .modParagraph .modC{
+	width: 927px;
+}
+
+
+.sectionZ .modD .box
+{
+    width: 220px;
+}
+
+
+.sectionZ .modParagraph .modD .box
+{
+    width: 224px;
+    padding: 4px;
+}
+
+
+.sectionZ .modE .box
+{
+    width: 172px;
+}
+
+.sectionZ .modParagraph .modE
+{
+	width: 925px;
+	margin-left: 2px;
+}
+
+.sectionZ .modParagraph .inline .modE {
+    margin-left: 2px;
+    width: 835px;
+}
+
+.sectionZ .modParagraph .modE .box
+{
+    width: 177px;
+    padding: 4px;
+}
+
+.sectionZ .modParagraph .inline .modE .box
+{
+    width: 161px;
+    padding: 3px;
+}
+
+
+.sectionZ .modParagraph .inline .modE h4.headline, .sectionZ .modParagraph .inline .modD h4.headline{
+	font-size: .8em;
+}
+
+.sectionZ .modZ .box
+{
+    width: 613px;
+}
+
+
+/* units (immer -0.03% wegen IE7) */
+
+.unitA
+{
+    width: 100%;
+    float: left;
+}
+
+.unitB
+{
+    width: 49.97%;
+    float: left;
+}
+
+.unitC
+{
+    width: 33.30%;
+    float: left;
+}
+
+.unitD
+{
+    width: 24.97%;
+    float: left;
+}
+
+.unitE
+{
+    width: 19.97%;
+    float: left;
+}
+
+
+.unitX
+{
+    width: 79.97%;
+    float: left;
+}
+
+
+.unitY
+{
+    width: 74.97%;
+    float: left;
+}
+
+.unitZ
+{
+    width: 66.63%;
+    float: left;
+}
+
+/*.childA * *,
+.childB * *,
+.childC * *,
+.childD * *,
+.childE * *,
+.childZ * *
+{
+    width: auto;
+    float: none;
+} */
+
+/* INITIAL SLIDER-WIDTH */
+
+.mod .slider
+{
+	width: 200000px;
+}
+
+/* GENERAL */
+
+img
+{ 
+	display: block; 
+}
+/*** ENDE ./grid.css ***/
+/*** ./header.jsp ***/
+
+/**** MASTERNAVI ***/
+
+#header
+{
+background: url(../img/base/masternavi/mn_ard.png) repeat-x 0 0;
+}
+
+.ard  #header
+{
+background: url(../img/base/masternavi/mn_ard.png) repeat-x 0 -65px;
+}
+
+/* @group Hintergruende */
+
+.tagesschau #header
+{	
+background: url(../img/base/masternavi/mn_tagesschau.png) repeat-x 0 -65px;
+}
+
+.sportschau #header
+{
+background: url(../img/base/masternavi/mn_sportschau.png) repeat-x 0 -65px;
+}
+
+.boerse #header
+{
+background: url(../img/base/masternavi/mn_boerse.png) repeat-x 0 -65px;
+}
+
+.ratgeber #header
+{
+background: url(../img/base/masternavi/mn_ratgeber.png) repeat-x 0 -65px;
+}
+
+.wissen #header 
+{
+background: url(../img/base/masternavi/mn_wissen.png) repeat-x 0 -65px;
+}
+
+.kultur #header
+{
+background: url(../img/base/masternavi/mn_kultur.png) repeat-x 0 -65px;
+}
+
+.kinder #header
+{
+background: url(../img/base/masternavi/mn_kinder.png) repeat-x 0 -65px;
+}
+
+.intern  #header
+{
+background: url(../img/base/masternavi/mn_intern.png) repeat-x 0 -65px;
+}
+
+.tv  #header
+{
+background: url(../img/base/masternavi/mn_tv.png) repeat-x 0 -65px;
+}
+
+.radio  #header
+{
+background: url(../img/base/masternavi/mn_radio.png) repeat-x 0 -65px;
+}
+
+.ardmt  #header
+{
+background: url(../img/base/masternavi/mn_ardmediathek.png) repeat-x 0 -65px;
+}
+
+
+
+/* @end */
+
+.masternavi .section,
+#header .wrapper .section
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.masternavi .navi
+{
+    float: left;
+    width: 100%;
+}
+
+.masternavi .tv
+{
+    margin-left: 32px;
+}
+
+/* @group Subnavi */
+
+.subnavi .subressort
+{
+    float: left;
+    padding: 6px 12px 6px 10px;
+    background-color: #fff;
+}
+
+.subnavi .subressort.hasArrow
+{
+    padding-right: 20px;
+}
+
+/* erstes Level der Ressort-Navi */
+
+#header .subressort .collapseArrow 
+{
+   background: url("../img/base/icon/arrow_collapsible.png") no-repeat scroll 0 -100px;
+    height: 20px;
+    margin-right: 3px;
+    margin-top: 6px;
+    width: 13px;
+}
+
+#header .subressort.collapsed .collapseArrow 
+{
+   background: url("../img/base/icon/arrow_collapsible.png") no-repeat scroll 0 -80px;
+}
+
+
+/* zweites Level der Ressort-Navi */
+
+#header .subressorts .collapseArrow 
+{
+   background: url("../img/base/icon/arrow_collapsible.png") no-repeat scroll 0 -20px;
+}
+
+#header .subressorts .hasArrow.collapsed .collapseArrow
+{
+   background: url("../img/base/icon/arrow_collapsible.png") no-repeat scroll 0 0;
+}
+
+.subnavi .ressorts li a:focus,
+.subnavi .ressorts .collapsed a:focus{
+	/* define visual effect for tab-navigation focus */
+	/* green color for testing */
+	 /*color: green;*/
+}
+
+.subnavi .subressorts .collapsed a
+{
+    color: #000;
+}
+
+.subnavi .subressorts
+{
+    position: absolute;
+    position: absolute;
+    width: 300px;
+    left: 0px;
+    top: 32px;
+    padding: 4px 4px 0 4px;
+    background-color: #fff;
+    z-index: 10;
+    -moz-box-shadow:    0px 20px 25px -5px #000;
+    -webkit-box-shadow: 0px 20px 25px -5px #000;
+    box-shadow:         0px 20px 25px -5px #000;
+}
+
+.subnavi .subressorts span
+{
+    float: left;
+    padding: 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+.subnavi .subressorts li a
+{
+    color: #000;
+    width: auto;
+    float: left;
+	line-height: 100%;
+	padding: 8px 6px;
+
+}
+
+.subnavi .subressorts li
+{
+    position: static;
+    width: 100%;
+    float: left;
+    margin: 0 0 0 0;
+    padding: 6px 0 6px 0;
+    padding: 0 0 0 0;
+}
+
+.subnavi .subressorts li:last-child
+{
+    border-bottom: 0 solid #fff;
+
+}
+
+.subnavi .subsubressorts
+{
+    width: 100%;
+    float: left;
+    background-color: #dbe0ea;
+    z-index: 20;
+    margin: 0 0 0 0;
+}
+
+
+.subnavi .subsubressorts li a
+{
+    padding: 6px 0 6px 0;
+	margin: 0 0 0 6px;
+	display: block;
+}
+
+
+.subnavi .subsubressorts li
+{ 
+	border-bottom: 1px solid #fff;
+}
+
+.subnavi .active,  .subnavi .active.collapsed
+{
+	color: #001a4b;
+	background: #fff;
+	border-bottom: 2px solid #fff;
+	padding-bottom: 4px;
+}
+
+.subnavi .active a, .subnavi .active.collapsed a
+{
+color: #001a4b;
+padding: 0;
+}
+
+.subnavi .menueToggle
+{
+    background-color: #fff;
+    height: 25px;
+    padding: 0 4px 0 0;
+    float: right;
+    width: 75px;
+    display: none;
+}
+
+.subnavi .menueToggle a
+{
+    padding: 4px 0 0 4px;
+    float: left;
+    width: 50px;
+}
+
+
+
+/* @end */
+
+#header {
+    width: 100%;
+    float: left;
+}
+
+#header .logo
+{
+    float: left;
+    padding: 0 0 0 0;
+    width: 50%;
+    height: 70px;
+}
+
+/* SEARCH - BOX */
+
+#header .searchBox
+{
+    float: right;
+    padding: 8px 0 0 0;
+    width: auto;
+}
+
+
+#header .searchBox img
+{
+    float: left;
+    height: 25px;
+}
+
+#header .searchBox input
+{
+    float: left;
+    padding: 0 0 0 5px;
+    margin: 0;
+	width: 186px;
+	line-heigth: 1em;
+	-ms-box-sizing: border-box;
+}
+
+
+
+#header .searchToggle
+{
+    display: none;
+}
+
+#header .searchForm
+{
+    background-color: #fff;
+    height: 25px;
+    width: 215px;
+    margin-top: 15px;
+    float: right;
+}
+
+#header .searchInput
+{
+    float: left;
+    height: 25px;
+    width: 150px;
+    border: none;
+    padding: 0 0 0 0;
+    margin: 0;
+    color: #516384;
+    font-size: 0.8em;
+}
+
+#header .searchInput.active
+{
+    color: #000;
+}
+
+#header .searchSubmit
+{
+    float: left;
+    width: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+#header .searchSubmit img
+{
+    float: right;
+    width: 100%;
+}
+/*** ENDE ./header.jsp ***/
+
+
+/*** ./skin/tagesschau.jsp ***/
+
+
+/*** FONTS TAGESSCHAU ***/
+
+.tagesschau h1, 
+.tagesschau h2, 
+.tagesschau h3, 
+.tagesschau h4
+{
+	font-family: Thesis;
+	font-weight: bold;
+} 
+
+
+
+
+/*** SKIN: TS ***/
+
+body.tagesschau
+{ 
+	background: #00599a url(../img/tagesschau/background/base.jpg) repeat-x fixed top;
+}
+
+
+
+.tagesschau .box.active a
+	{
+	color: #fff;
+	}
+
+
+
+.tagesschau #content
+{
+	background: none;
+}
+
+.tagesschau .mod{
+	background-color: #fff;
+}
+
+.tagesschau .box.active{
+	background-color: #c8e4f5;
+}
+
+.tagesschau #content .sectionC, .tagesschau #content .sectionZ{
+    background-color: #fff;
+}
+
+
+/*** HINTERGRUND BOX ***/
+.tagesschau .box
+{
+	background: #fff url('../img/tagesschau/background/box_base.jpg') repeat-x bottom;
+}
+
+.tagesschau .box.active
+{
+    background: #001a4b url('') repeat-x bottom;
+    color: #fff;
+}
+
+/*** ENDE ./skin/tagesschau.jsp ***/
+
+/*** VISIBLE UND HIDDEN KLASSEN ***/
+
+.hiddenInViewXL
+{
+	display: none;
+}
+
+.visibleInViewXL
+{
+	display: block;
+}
+
+/*** Inline-Klasse ***/
+
+.inline .modGallery .box, .inline .modHead .box, .inline .modBildwischer .box
+{
+	width: 834px;
+	padding: 0;
+}
+
+.inline .modGallery .media, .inline .modBildwischer .media{
+	width: 100%;
+	height: 472px;
+}
+
+
+.inline {
+	margin: 16px 5%;
+	width: 836px;
+	display: block;
+	float: left;
+	position: relative;
+}
+
+.inline .media{
+	margin: 0px;
+}
+
+.inline .modHead .info, .inline .modHead .subline, .inline .modGallery .teasertext{
+	padding: 4px;
+	width: auto;
+}
+
+.inline .mod.modGallery .controls.sliding .prev, .inline .mod.modGallery .controls.sliding .next{
+	margin: 0px;
+}
+
+.sectionZ .inline .modD .box {
+    width: 201px;
+    padding: 4px;
+}
+
+.modParagraph .inline h2.headline {
+    float: none;
+    font-size: 1.3em;
+	margin: 0px;
+    width: auto;
+    padding: 4px;
+}
+
+
+.modParagraph h4.subtitle.faqTrigger,
+.modParagraph h2.subtitle.faqTrigger {
+    float: left;
+    margin-bottom: 18px;
+    width: 88%;
+}
+
+.modParagraph h4.subtitle.faqTrigger .collapseArrow,
+.modParagraph h2.subtitle.faqTrigger .collapseArrow  {
+    margin-top: 6px;
+}
+
+/*** Wetter ***/
+
+.wetter .collapseArrow
+{
+	margin-top: 6px;
+}
+
+.mod.modKachel .slider {
+    width: 100% !important;
+}
+
+/* Text-Link im Logo-Bereich f. spezielle Events */
+.eventLogo {
+	width: 424px;
+	position: relative;
+	top: -62px; 
+	left: 769px;
+}
+
+.eventLogoLink {
+	color: #FFFFFF; 
+}
+
+
+/** TWEET ***/
+.modParagraph .tweet .created_at .logo a{
+			background: url("../img/base/icon/bookmark_icons.png") no-repeat scroll right -96px rgba(0, 0, 0, 0);		
+			padding-right: 21px;
+		}
+
+
+/*** ################ Barrierefrei ###################  ***/
+ul.skiplinks li
+{
+	background: url("../img/base/masternavi/mn_tagesschau.png") repeat-x scroll 0 -73px transparent;
+} 
+
+.skiplinks a:focus
+{
+	width: 1424px;
+}
+
+
+
+
+/* ############################ sectionA Rundown ####################### */
+
+div.subnavi.fixie{
+	width: 1426px;
+	margin-bottom: 8px;
+	margin-left: -8px;
+}
+ 
+.modParagraph .modRundown .mediaCon.mediaRight.small {
+    margin-right: 10%;
+}
+ 
+.modParagraph .modRundown .text, 
+.mod .snowflake h3.headline, 
+.modParagraph .modRundown .dachzeile,
+.modParagraph .modRundown .mediaCon.mediaTop.small,
+.modParagraph .modRundown .infokasten {
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.modParagraph.modRundown .mediaCon.mediaTop.small {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.modParagraph.modRundown .mediaCon.mediaTop.small.audio,
+.modParagraph.modRundown .mediaCon.mediaTop.small.map {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 30%;
+    width: 60%;
+}
+
+.modParagraph.modRundown .small .mediaA {
+	margin: 0;
+	width: 100%;
+}
+ 
+div.subnavi.fixie .subressort.hasArrow{
+	padding-right: 30px;
+} 
+ 
+div.subnavi.fixie .collapsed .collapseArrow {
+    background: url("../img/base/icon/arrow_collapsible.png") no-repeat scroll 0 -78px rgba(0, 0, 0, 0);
+}
+ 
+div.subnavi.fixie .collapseArrow {
+    background: url("../img/base/icon/arrow_collapsible.png") no-repeat scroll 0 -98px rgba(0, 0, 0, 0);
+}
+
+
+
+/*** Bildergallerie etc. ***/
+.sectionA .inline{
+			width: 1128px;
+}
+
+.sectionA .modRundown .inline .modGallery .box, 
+.sectionA .modRundown .inline .modHead .box, 
+.sectionA .modRundown .inline .modBildwischer .box {
+	width: 1128px;
+}
+
+.sectionA .modRundown .inline .mod.modGallery .controls.sliding {
+	top: 270px;
+}
+
+.sectionA .modRundown .inline .modGallery .box .mediaCon,
+.sectionA .modRundown .inline .modBildwischer .box .mediaCon {
+    height: 640px;
+}
+
+.sectionA .modRundown .inline .modD .slider .box {
+    width: 172px;
+}
+
+
+ .modParagraph.modRundown .small.video .mediaA iframe{
+	/* height: 638px !important; */
+}
+
+ .modParagraph.modRundown .small.audio .mediaA iframe{
+	height: 160px !important;
+}
+
+/*** Chapter ***/
+.mod .chapter .dossiertitle {
+	padding-top: 50px;
+}
+
+.mod .chapter h3.headline{
+	font-size: 1.9em;
+}
+
+/*** Chapter ***/
+.mod .chapter.v2 .dossiertitle {
+	padding: 0;
+	height: 80px;
+}
+
+.mod .chapter.v2 {
+	padding-top: 90px;
+}
+
+.mod .chapter.v2 h3.headline{
+	font-size: 1.7em;
+	padding: 1% 0;
+}
+
+.chapter.v2 .prevchapter .button{
+	bottom: 39px; 
+}
+
+.chapter.v2 .prevchapter{
+	top: 91px;
+}
+
+/*** Breadcrumb ***/
+.breadcrumb ul li
+{
+	font-size: 110%;
+}
+
+#header .wrapper .section.sectionBreadcrumb {
+	margin-bottom: -8px;
+}
+
+.breadcrumb ul li
+{
+	background-position: 0 -98px;
+}
+.breadcrumb ul li:first-child
+{
+	background-position: 0 2px;
+}
+
+/*** Section andocken ***/
+.angedockt {
+	margin-top: -8px;
+}
+
+.angedockt .box { 
+	margin-top: 6px;
+}
+
+/*** top10 Nummerierung ***/
+.modPicList .linklist .list .number {
+	margin: 24px 8px 0 0;
+	padding: 12px 12px 11px 17px;
+	width: 14px;
+}
+
+.modPicList .linklist .list .number.zweistellig {
+	padding: 11px 12px;
+	width: 18px;
+}
+
+/*** Container Button ***/
+
+.containerButton {
+	float: right;
+	margin: -38px 6px 0 0;
+}
+
+.modConGallery .containerButton {
+	margin-top: -38px;
+}
+
+.sectionA .modConGallery .modHead .box, .modConGallery .mod.modHead {
+	overflow: visible;
+}
+
+.sectionA .modConGallery .modHead .box {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.sectionA .modConGallery .modHead .info {
+	clear: both;
+	width: 100%;
+	text-align: right;
+	margin-top: -30px;
+}
+
+.sectionA .modConGallery.embedded .modHead .info {
+	text-align: center;
+}
+
+/*** Teaser IMG Overlay ***/
+
+.teaserImgOverlayText {
+	font-size: 42px;
+	padding: 8px 8px 12px 10px;
+}
+
+/***shareCon ***/
+
+.socialMedia .sharingBar .modSharing {
+	height: 49px;
+}
+
+.socialMedia .sharingBar .shareCon {
+	padding: 10px 3.35% 0 3.35%;
+	height: 45px;
+}
+
+.socialMedia .sharingBar .shareCon.isFixed {
+	background-color: #ffffff;
+	position: fixed;
+	bottom: 0;
+	height: 45px;
+	width: 1419px;
+	padding: 2px;
+	margin-left: -7px;
+	z-index: 1000;
+	-webkit-box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 5px 13px 0px rgba(0,0,0,0.75);
+    background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 31%, rgba(255,255,255,0.8) 53%, rgba(255,255,255,1) 82%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(31%,rgba(255,255,255,1)), color-stop(53%,rgba(255,255,255,0.8)), color-stop(82%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 31%,rgba(255,255,255,0.8) 53%,rgba(255,255,255,1) 82%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 31%,rgba(255,255,255,0.8) 53%,rgba(255,255,255,1) 82%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 31%,rgba(255,255,255,0.8) 53%,rgba(255,255,255,1) 82%,rgba(255,255,255,1) 100%); /* IE10+ */
+background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 31%,rgba(255,255,255,0.8) 53%,rgba(255,255,255,1) 82%,rgba(255,255,255,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+}
+
+.sharingBar .nachoben {
+	display: none;
+}
+
+.sharingBar .shareCon.isFixed .nachoben {
+	position: absolute;
+	display: block;
+	bottom: 0px;
+	right: 0px; 
+	padding:7px 8px;
+	margin-right: 6px;
+	margin-bottom: 6px;
+	z-index: 1001;
+	opacity: 0.8;
+}
+
+/* sammelcontainer ausblenden */
+
+.modSharing.sharingBar .fixedSharingContainer {
+	display: none;
+}
+
+/*** Storywrapper ***/
+
+.storywrapper .modA {
+	overflow: visible;
+}
+
+.storywrapper .mediaTop {
+	margin-top: 0;
+}
+
+.storywrapper {
+	width: 1424px;
+	margin-left: 8px;
+}
+
+.storywrapper .sectionA {
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+}
+
+
+.storywrapper .sectionC {
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+}
+
+.storywrapper .sectionA .modA .dachzeile,
+.storywrapper .sectionA .modA .headline,
+.storywrapper .sectionA .modA .text {
+	margin-left: 3.4%;
+}
+
+.storywrapper .sectionA .modA .headline {
+	margin-left: 3.3%;
+}
+
+.storywrapper .sectionA .modA h1,
+.storywrapper .sectionA .modA .text {
+	position: relative;
+	top: 10px;
+}
+
+.storywrapper .sectionA .modA .headline {
+	font-size: 2em;
+}
+
+/* sectionC nach oben ausrichten */
+.storywrapper .section.sectionC {
+	margin-top: -100px;
+}
+
+.storywrapper .section.sectionC .con:first-child h3.ressort {
+	padding-bottom: 14px;
+}
+
+.storywrapper .section.sectionC .con {
+	margin-top: 14px;
+}
+
+.storywrapper .section.sectionC cset .con:first-child {
+	margin-top: 14px;
+}

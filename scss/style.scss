@@ -1,0 +1,109 @@
+#njMainContainer {
+  color: #f5f5f5;
+  margin-left: 50px;
+}
+
+#njTimeRangeInput {
+  width: 300px;
+}
+
+.njRubrikCheckbox {
+  //border-width: 3px;
+  //border-color: #000000;
+  //border-style: solid;
+  // width: 75%;
+}
+
+#startQuizBtn {
+  margin-left: 250px;
+  border: 2px solid #a1a1a1;
+  padding: 10px 40px;
+  background: #dddddd;
+  width: 300px;
+  border-radius: 25px;
+}
+
+#startQuizBtn:hover {
+  font-weight: bold;
+  border-color: #000000;
+}
+
+#njMainContainer {
+  width: 800px;
+  border: 5px solid #a1a1a1;
+  padding: 10px 40px;
+  background: #0e4b65;
+  border-radius: 25px;
+}
+
+#njForm {
+  border: 1px solid #c6c6c6;
+  padding: 10px 40px;
+  background: #4e65d0;
+  border-radius: 25px;
+}
+
+#njFragenId {
+  border: 1px solid #c6c6c6;
+  padding: 10px 4px;
+  background: #4e65d0;
+  border-radius: 5px;
+}
+
+.njAntwortCss {
+  border: 1px solid #c6c6c6;
+  padding: 10px 20px;
+  background: #bbc1d0;
+  border-radius: 5px;
+  width: 360px;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.njAntwortCss:hover {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #9e9aad;
+  border: 10px #f4fff5;
+}
+
+.njAllgemeinCounter {
+  border: 1px solid #c6c6c6;
+  padding: 10px 20px;
+  background: #2729d0;
+  border-radius: 5px;
+  width: 250px;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#njRichtigeAntwortenCounter {
+  margin-top: -38px;
+  margin-left: 445px;
+}
+
+#nsGameOverTextField {
+  width: 700px;
+  border: 5px solid #a1a1a1;
+  padding: 10px 40px;
+  background: #3f23d5;
+  border-radius: 25px;
+}
+
+#njPlayAgainBtn {
+  margin-left: 250px;
+  border: 2px solid #a1a1a1;
+  padding: 10px 40px;
+  background: #dddddd;
+  width: 300px;
+  border-radius: 25px;
+  font-size: 18;
+}
+
+
+#njPlayAgainBtn:hover {
+  font-weight: bold;
+  border-color: #000000;
+}

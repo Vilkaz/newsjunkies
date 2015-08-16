@@ -1,0 +1,484 @@
+
+html, body	{
+	margin: 0;
+	padding: 0;
+	font-size: 12px!important;
+	font-family: Verdana, Tahoma, sans-serif;
+	color: #000;
+	background-color: #FFF;
+}
+
+body.tagesschau 
+{
+	background: transparent !important;
+}
+
+/* nicht drucken */
+
+.tshtmlplayer, .tshtmltplayer, .tshtmlaudioplayer {
+   	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6, p, form {
+	margin: 5px 0 !important;
+	padding: 0;
+}
+
+img
+{
+	border: none;
+	width: 250px !important;
+}
+
+.tsIndex .modPremium img, .story .mediaTop .mediaA img 
+{
+	width: 630px !important;
+}
+
+.infokasten.small img
+{
+	width: 200px !important;
+}
+
+ul, ol, li {
+	padding: 0;
+	margin: 0;
+	border: 0 !important;
+/*	list-style: none;*/
+}
+
+.IEabbr, abbr, acronym {
+	border-bottom: none;
+}
+
+a:link, a:visited {
+ color: #0645AD;
+ background: transparent;
+/* font-size: 1em;*/
+ font-weight: normal !important;
+ text-decoration: underline;
+ }
+
+/*	---{/Misc}--- */
+/*	---FONTS--- */
+
+a, #centerCol a, #sendungenLeft a, #sendungenLeft .zusatz a, #seitenanfang a, #stopper a {
+	color: #000;
+	text-decoration: none;
+}
+
+h4.headline a
+{
+/*	font-size: 13px !important;*/
+	color: #000 !important;
+	font-weight: bold !important;	
+	text-decoration: none !important;
+	width: 100% !important;
+	float: none !important;
+}
+
+h1 {
+	font-size: 21px;
+}
+
+
+
+h2 {
+	font-size: 20px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+h4 {
+	font-size: 16px;
+}
+
+.subtitle.small
+{
+	font-size: 13px !important;
+	font-weight: 800;
+	margin: 0 !important;
+}
+
+.siteHeadline, a.hidden,
+.conHeadline.hidden
+{
+	display: none;
+}
+
+.teasertext,
+.teasertext a
+{
+	color: #000 !important;
+	font-weight: normal !important;	
+	text-decoration: none !important;
+	float: none !important;
+	clear: left !important;
+	overflow: visible !important;
+	width: 630px !important;
+}
+
+.teaser p.dachzeile
+{
+	float: none !important;
+	clear: left;
+	margin-top: 15px !important;
+}
+
+.teaser p.dachzeile a
+{
+	color: #000 !important;
+	font-weight: bold !important;	
+	text-decoration: none !important;	
+	width: 100% !important;
+	float: none !important;
+}	
+
+/*	---{/Fonts}--- */
+
+p, ul, ol, li {
+    color: #000000 !important;
+    float: none;
+    clear: left;
+    height: auto !important;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    width: auto !important;
+}
+
+.story p
+{
+	width: 630px !important;
+}
+
+/*	--------------- HEADER --------------- */
+
+#header {
+	display: none;
+}
+
+/*	--------------- PRINTBOX --------------- */
+
+#printbox {
+    border: 2px solid #CECECE;
+    clear: left;
+    display: block;
+    height: 86px;
+    margin: 10px 0;
+    padding: 0;
+    position: relative;
+    font-size: 12px;
+}
+#printbox img {
+    float: left;
+    left: 0;
+    margin: 10px 18px 10px 10px;
+    position: absolute;
+    top: 0;
+}
+#printbox div {
+    margin: 0 0 0 270px;
+	padding: 12px 12px 12px 0;
+}
+
+#printbox span 
+{
+	float: left;	
+	margin-top: 10px;
+}
+
+#printbox div #article_url {
+	font-size: 12px;
+    font-weight: 800;
+    clear: both;
+    margin-top: 5px;
+}
+
+/*	--------------- CONTENT --------------- */
+
+/* ausblenden */
+.section.sectionC, 
+.modSocialbar,
+.icon,
+.mubuIcon,
+.multimediaButtons,
+.poweruser,
+iframe, 
+.inline,
+.modQuiz, 
+.modPicture,
+.modConComments,
+.buttons a,
+.multimediaButtons .hiddenInViewXS,
+.imagegallery .modHead .info,
+.imagegallery .modHead .link,
+.story .mediaCon .mediaInfo .teasertext, 
+.sectionA .modC, 
+.modMini,
+.conHeadline,
+h2.conHeadline,
+.slider,
+#slider-1, 
+#slider-2, 
+#slider-3, 
+#slider-4,
+.hidden 
+{
+	display: none !important;
+}
+
+
+.sectionC h2.conHeadline, .sectionA h2.conHeadline
+{
+	display: block !important;
+	color: black;
+}
+
+
+ol, ul 
+{
+    list-style-type: none;
+    margin-bottom: 10px !important;
+}
+
+.tsIndex .section, .modB .box
+{
+	margin-bottom: 15px; 
+	height: 100% !important;	
+	clear: left;
+}
+
+.box
+{
+	background: transparent !important;
+	height: 100% !important;
+	margin-bottom: 35px !important;
+	padding: 0 !important;
+	width: 100% !important;
+}
+
+.mod .mediaCon,
+.mod.modClassic .mediaCon,
+.mediaB,
+h4.headline,
+.teaser .linklist.teaserImTeaser,
+.linklist,
+.teaserCon
+{
+	float: none !important;	
+	clear: left !important;
+}
+
+.mediaCon.small
+{
+	margin: 10px 0 !important;
+	height: 100% !important;
+}
+
+.mediaCon.mediaTop.small
+{
+	margin: 0;	
+}
+
+.modPremium.smallImage .teasertext,
+.mod.modA.modClassic .teasertext,
+.modPremium.smallImage .linklist
+
+{
+	width: 630px !important;
+}
+
+.teaser
+{
+	margin-top: 15px !important;	
+}
+
+.modParagraph .text,
+.modParagraph .text.small,
+.infotext
+{
+	margin-bottom: 15px !important;
+}
+
+form.separatefields
+{
+	margin-bottom: 15px;
+}
+
+.linklist.articlePageList
+{
+	margin-bottom: 15px !important;
+	margin-top: 15px !important;
+}
+/*
+.modParagraph .media img
+{
+	margin-top: 5px;	
+	width: 180px;
+}
+*/
+.modParagraph .mediaCon.small .mediaC
+{
+	width: 180px;
+} 
+
+.modParagraph .mediaCon.small .mediaB,
+.modParagraph .mediaCon.small .mediaB img,
+.modParagraph .mediaCon.small .mediaA img  
+{	
+	width: 250px !important;
+}
+
+.modParagraph .mediaTop .mediaA img
+{
+	width: 600px !important;
+}
+
+/*** AV Inhalte ***/
+.story .mediaCon.audio .infotext:before
+{
+	content: "Audio: ";
+	font-weight: 800;
+}
+
+.story .mediaCon.video .infotext:before
+{
+	content: "Video: ";
+	font-weight: 800;
+}
+
+/*** modGallery ***/
+
+.story .modGallery img, .imagegallery .modGallery img
+{
+	width: 630px !important;
+}
+
+.story .modGallery .landscape .teaser, .imagegallery .modGallery .landscape .teaser
+{
+	margin-top: 0 !important;
+}
+/*** Meldungen ***/
+
+ul.skiplinks{
+	display: none;
+}
+
+.modParagraph h1 .headline {
+	margin: 0;
+}
+
+.modParagraph h1 .dachzeile {
+	float: left;
+	width: 100%; 
+	margin: 0;
+	font-size: 0.7em;
+	font-weight: normal;
+}
+
+.modParagraph .autorenzeile
+{
+	margin: 0 0 15px 0 !important;
+}
+
+/*  Infokasten  */
+.infokasten p.author
+{
+	font-style: italic;
+	text-indent: 10px;	
+	margin-bottom: 5px;
+}
+
+.infokasten .teaser
+{
+	margin-bottom: 15px;
+}
+
+.modParagraph .infokasten.right,
+.modParagraph .infokasten.left
+{
+    width: 80% !important;	
+	margin-left: 70px !important;
+	margin-bottom: 20px !important;
+}
+
+.box .modParagraph .infokasten .teaser
+{
+	background-color: #dbdbdb !important;
+}
+
+.modParagraph .infokasten.right .teaser,
+.modParagraph .infokasten.left .teaser
+{
+	border-left: 20px solid #f2f2f2 !important;
+	padding-left: 5px;
+	margin-bottom: 15px;	
+}
+
+.mediaCon.mediaTop.small, .mediaCon.mediaRight.small, .mediaCon.mediaLeft.small, .infokasten.small
+{
+	float: none;
+	clear: both;
+	margin: 20px 0 20px 10% !important;
+	padding: 2px;
+	border-left: 20px solid #f2f2f2 !important;
+	padding-left: 5px;
+	width: 50%;
+	
+}
+
+.mediaCon.mediaTop.small
+{
+	min-height: 100px;
+}
+
+.story .mediaInfo p
+{
+	width: 250px !important;
+}
+
+.modParagraph .text a
+{
+	border: none;	
+}
+
+/*  Table  */
+ table 
+ {
+ 	margin-bottom: 10px;
+ }
+ 
+ table tr.headlines
+ {
+ 	background-color: #001A4B !important;
+ }
+
+/* Sendungsbezug */
+
+.infokasten.small.sendungsbezug,
+.infokasten.small.rssfeed
+{
+	margin: 0 !important;
+	padding: 0 !important;
+	float: none;
+}
+
+.sendungsbezug p.teasertext
+{
+	font-weight: 800 !important;
+}
+
+/*	--------------- FOOTER --------------- */
+#footer {
+	display: none;
+}
+
+
+/* --- SHARING --- */
+
+.modSharing{
+	display: none;
+}

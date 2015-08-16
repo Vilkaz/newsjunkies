@@ -1,0 +1,115 @@
+/* line 1, ../scss/style.scss */
+#njMainContainer {
+  color: #f5f5f5;
+  margin-left: 50px;
+}
+
+/* line 6, ../scss/style.scss */
+#njTimeRangeInput {
+  width: 300px;
+}
+
+/* line 17, ../scss/style.scss */
+#startQuizBtn {
+  margin-left: 250px;
+  border: 2px solid #a1a1a1;
+  padding: 10px 40px;
+  background: #dddddd;
+  width: 300px;
+  border-radius: 25px;
+}
+
+/* line 26, ../scss/style.scss */
+#startQuizBtn:hover {
+  font-weight: bold;
+  border-color: #000000;
+}
+
+/* line 31, ../scss/style.scss */
+#njMainContainer {
+  width: 800px;
+  border: 5px solid #a1a1a1;
+  padding: 10px 40px;
+  background: #0e4b65;
+  border-radius: 25px;
+}
+
+/* line 39, ../scss/style.scss */
+#njForm {
+  border: 1px solid #c6c6c6;
+  padding: 10px 40px;
+  background: #4e65d0;
+  border-radius: 25px;
+}
+
+/* line 46, ../scss/style.scss */
+#njFragenId {
+  border: 1px solid #c6c6c6;
+  padding: 10px 4px;
+  background: #4e65d0;
+  border-radius: 5px;
+}
+
+/* line 53, ../scss/style.scss */
+.njAntwortCss {
+  border: 1px solid #c6c6c6;
+  padding: 10px 20px;
+  background: #bbc1d0;
+  border-radius: 5px;
+  width: 360px;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+/* line 64, ../scss/style.scss */
+.njAntwortCss:hover {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #9e9aad;
+  border: 10px #f4fff5;
+}
+
+/* line 71, ../scss/style.scss */
+.njAllgemeinCounter {
+  border: 1px solid #c6c6c6;
+  padding: 10px 20px;
+  background: #2729d0;
+  border-radius: 5px;
+  width: 250px;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+/* line 82, ../scss/style.scss */
+#njRichtigeAntwortenCounter {
+  margin-top: -38px;
+  margin-left: 445px;
+}
+
+/* line 87, ../scss/style.scss */
+#nsGameOverTextField {
+  width: 700px;
+  border: 5px solid #a1a1a1;
+  padding: 10px 40px;
+  background: #3f23d5;
+  border-radius: 25px;
+}
+
+/* line 95, ../scss/style.scss */
+#njPlayAgainBtn {
+  margin-left: 250px;
+  border: 2px solid #a1a1a1;
+  padding: 10px 40px;
+  background: #dddddd;
+  width: 300px;
+  border-radius: 25px;
+  font-size: 18;
+}
+
+/* line 106, ../scss/style.scss */
+#njPlayAgainBtn:hover {
+  font-weight: bold;
+  border-color: #000000;
+}
