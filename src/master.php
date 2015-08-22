@@ -109,14 +109,14 @@ function getRubrikenIDs(){
 
 function getAnzahlDerFragen(){
     $rubrikIDs = getRubrikenIDs();
-    $fragenIdArray = FrageDao::getAllFragenIDsByRubrikIDs($rubrikIDs);
+    $fragenIdArray = FrageDao::getAllFragenIDsByRubrikID($rubrikIDs);
     $length =  count($fragenIdArray);
     return $length;
 }
 
 function startQuiz(){
-    $rubrikIDs = getRubrikenIDs();
-    $fragenIDs = FrageDao::getAllFragenIDsByRubrikIDs($rubrikIDs);
+    $rubrikIDs = $_REQUEST['njCategory'];
+    $fragenIDs = FrageDao::getAllFragenIDsByRubrikID($rubrikIDs);
     $fixedIDs =fixArray($fragenIDs);
     $fragenSets = FrageDao::getFragenWithAntwortenByIdArray($fixedIDs);
     $_SESSION['fragenSets']=serialize($fragenSets);
@@ -153,6 +153,12 @@ function addPoints($isRight){
     }
 }
 
+function getAnswers(){
+    $fragen = unserialize($_SESSION['fragenSets']);
+    $frageNr = $_SESSION['fragenNr'];
+    return  $fragen[$frageNr]->getAnswerTruthList();
+}
+
 $test= 1;
 switch ($action) {
     case ('FrageSpeichern'):
@@ -167,6 +173,9 @@ switch ($action) {
         break;
     case('checkAnswer'):
         print(json_encode(checkAntwort()));
+        break;
+    case('getAnswers'):
+        print(json_encode(getAnswers()));
         break;
 }
 

@@ -1,5 +1,5 @@
 $backgroundMain : f0ece5;
-$testBackground : #FEFEFF;
+$textBackground: #FEFEFF;
 
 //rework
 
@@ -14,6 +14,24 @@ body{
 
 #njInnerContent{
   background-color: #FEFEFF;
+}
+
+#progressBar {
+  width: 600px;
+  height: 22px;
+  border: 1px solid #111;
+  background-color: #CECECE;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+#progressBar div {
+  height: 100%;
+  color: #fff;
+  text-align: right;
+  line-height: 22px; /* same as #progressBar height if we want text middle aligned */
+  width: 0;
+  background-color: #0099ff;
+  box-sizing: border-box;
 }
 
 //rework
@@ -41,7 +59,7 @@ body{
   margin-left: 20%;
   width: 700px;
   padding: 10px 40px;
-  background-color: $testBackground;
+  background-color: $textBackground;
 }
 
 #njForm {
@@ -51,9 +69,11 @@ body{
 }
 
 #njFragenId {
+  font-weight: bold;
+  width: 600px;
   border: 1px solid #c6c6c6;
   padding: 10px 4px;
-  background: #4e65d0;
+  background: #1B95D1;
   border-radius: 5px;
 }
 
@@ -62,7 +82,7 @@ body{
   padding: 10px 20px;
   background: #bbc1d0;
   border-radius: 5px;
-  width: 360px;
+  width: 250px;
   font-size: 16px;
   margin-top: 10px;
   margin-left: 10px;
@@ -78,17 +98,16 @@ body{
 .njAllgemeinCounter {
   border: 1px solid #c6c6c6;
   padding: 10px 20px;
-  background: #2729d0;
+  background: #1B95D1;
   border-radius: 5px;
   width: 250px;
   font-size: 16px;
   margin-top: 10px;
-  margin-left: 10px;
 }
 
 #njRichtigeAntwortenCounter {
   margin-top: -38px;
-  margin-left: 445px;
+  margin-left: 350px;
 }
 
 #nsGameOverTextField {

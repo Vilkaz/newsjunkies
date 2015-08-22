@@ -20,6 +20,15 @@ class FragenRunde {
     }
 
 
+    public function getAnswerTruthList(){
+        $result = array();
+        foreach ($this->antworten as $key=>$antwort){
+            /** @var Antwort $antwort*/
+            $result[$key]=$antwort->getIstRichtig();
+        }
+        return $result;
+    }
+
 
 
     //region getter and setter

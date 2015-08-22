@@ -13,35 +13,35 @@ $frageNr = $_SESSION['fragenNr'];
 
 $rightAnswers  = $_SESSION['richtigeAntworten'];
 
-if ($frageNr < sizeof($fragen)) {
+echo'<script>progress(15, 15, $("#progressBar"))</script>';
+
+    if ($frageNr < sizeof($fragen)) {
     echo('<div> <div  class="njAllgemeinCounter">Frage nr ' . ($frageNr+1) . '</div><div id="njRichtigeAntwortenCounter" class="njAllgemeinCounter">richtige Antworten soweit : '.$rightAnswers.'</div> </div><br>');
-    showFrage($fragen[$frageNr]);
+    echo'<div id="progressBar" data-run=true><div></div></div>';
+        showQuestion($fragen[$frageNr]);
+        echo'<div id="countdown"></div>';
 } else{
     finishGame();
 }
 
 
 /**@parameter FragenRunde $fragenSet */
-function showFrage($fragenSet)
+function showQuestion($fragenSet)
 {
-    echo(showPicture($fragenSet->getFrage()));
+    echo(showMedia($fragenSet->getFrage()));
     echo('<div id="njFragenId" > ' . $fragenSet->getFrage()->getText() . '</div>');
-    showAnswers($fragenSet->getAntworten());
+    showAnswers($fragenSet);
 
 }
 
-function showAnswers($answers){
-
-    echo ('<input  id="njAnswer1" class="njAntwortCss" type="button" onclick="checkAnswer(0)" value="'.$answers[0]->getText().'">');
-    echo ('<input  id="njAnswer2" class="njAntwortCss" type="button" onclick="checkAnswer(1)" value="'.$answers[1]->getText().'">');
-    echo("<br>");
-    echo ('<input  id="njAnswer3" class="njAntwortCss" type="button" onclick="checkAnswer(2)" value="'.$answers[2]->getText().'">');
-    echo ('<input  id="njAnswer4" class="njAntwortCss" type="button" onclick="checkAnswer(3)" value="'.$answers[3]->getText().'">');
+function showAnswers($fragenSet){
+    $answers=$fragenSet->getAntworten();
+    require_once('view/answers.php');
 }
 
 
-function showPicture($frage){
-    if ($frage->getMediaId()!==null){
+function showMedia($frage){
+    if ($frage->getMediaId()==1){
         return '<img src="img/'.$frage->getMediaId().'.png">';
     }
     return "";

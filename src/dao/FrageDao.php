@@ -4,6 +4,7 @@ namespace dao;
 use classes\Frage;
 use classes\FragenRunde;
 use classes\MyPDO;
+use PDO;
 
 /**
  * Erstellung:              6/17/15
@@ -49,26 +50,13 @@ class FrageDao
         $db->execute();
     }
 
-    public static function getAllFragenIDsByRubrikIDs($rubrikIDArray)
+    public static function getAllFragenIDsByRubrikID($rubrikID)
     {
         $db = MyPDO::getInstance();
-        $queryString = ('SELECT frage_id from fragen_rubriken where ' . self::makerubrikIdRequestFromarray($rubrikIDArray));
-        $db->query($queryString);
+        $db->query('SELECT frage_id from fragen_rubriken where rubrik_id=:rubrik_id');
+        $db->bindVal(':rubrik_id', $rubrikID,PDO::PARAM_INT);
         return $db->resultset();
     }
-
-    private static function makerubrikIdRequestFromarray($idRequestArray)
-    {
-        $idRequestString = "";
-        foreach ($idRequestArray as $id) {
-            $idRequestString .= "rubrik_id=" . $id;
-            if ($id !== ($idRequestArray[count($idRequestArray) - 1])) {
-                $idRequestString .= " AND ";
-            }
-        }
-        return $idRequestString;
-    }
-
 
     public static function getFragenWithAntwortenByIdArray($idArray)
     {

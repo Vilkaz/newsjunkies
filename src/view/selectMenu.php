@@ -7,28 +7,28 @@
         <form id="njForm">
             <div class="njRubrikCheckbox">
                 <label for="njBildertest">Bildertest</label>
-                <input id="njBildertest" type="radio" name="njCategory" onchange="getAnzahlDerFragen()">
+                <input id="njBildertest" value="1" type="radio" name="njCategory" onchange="getAnzahlDerFragen()">
 
                 &nbsp;&nbsp;
 
                 <label for="njInland"> Inland</label>
-                <input id="njInland" type="radio" name="njCategory" onchange="getAnzahlDerFragen()">
+                <input id="njInland" value="2" type="radio" name="njCategory" onchange="getAnzahlDerFragen()">
                 &nbsp;&nbsp;
 
                 <label for="njAusland">Ausland</label>
-                <input id="njAusland" type="radio" name="njCategory" onchange="getAnzahlDerFragen()">
+                <input id="njAusland" value="3" type="radio" name="njCategory" onchange="getAnzahlDerFragen()">
                 &nbsp;&nbsp;
 
                 <label for="njWirtschaft">Wirtschaft</label>
-                <input id="njWirtschaft" type="radio" name="njCategory" onchange="getAnzahlDerFragen()">
+                <input id="njWirtschaft" value="4" type="radio" name="njCategory" onchange="getAnzahlDerFragen()">
                 &nbsp;&nbsp;
 
                 <label for="njKultur">Kultur</label>
-                <input id="njKultur" type="radio" name="njCategory" onchange="getAnzahlDerFragen()">
+                <input id="njKultur" value="5" type="radio" name="njCategory" onchange="getAnzahlDerFragen()">
                 &nbsp;&nbsp;
 
                 <label for="njBildertest">Sport</label>
-                <input id="njsport" type="radio" name="njCategory" onchange="getAnzahlDerFragen()">
+                <input id="njsport" value="6" type="radio" name="njCategory" onchange="getAnzahlDerFragen()">
             </div>
             <br>
             <br>
