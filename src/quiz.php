@@ -98,8 +98,8 @@ session_start();
     <script type="text/javascript" src="./index_files/tracking.js"></script>
     <script type="text/javascript" src="./index_files/sitestat.js"></script>
 -->
-    <script type="text/javascript" src="js/newsjunkies.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/newsjunkies.js"></script>
 
 
     <link rel="stylesheet" type="text/css" href="../css/style.css" >

@@ -1,21 +1,30 @@
-#njMainContainer {
-  color: #f5f5f5;
-  margin-left: 50px;
+$backgroundMain : f0ece5;
+$testBackground : #FEFEFF;
+
+//rework
+
+body{
+  background-color: #f0ece5;
 }
+
+#njLogo_img{
+  background-color: #2568B4;
+  width: 600px;
+}
+
+#njInnerContent{
+  background-color: #FEFEFF;
+}
+
+//rework
 
 #njTimeRangeInput {
   width: 300px;
 }
 
-.njRubrikCheckbox {
-  //border-width: 3px;
-  //border-color: #000000;
-  //border-style: solid;
-  // width: 75%;
-}
 
 #startQuizBtn {
-  margin-left: 250px;
+  margin-left: 175px;
   border: 2px solid #a1a1a1;
   padding: 10px 40px;
   background: #dddddd;
@@ -29,18 +38,16 @@
 }
 
 #njMainContainer {
-  width: 800px;
-  border: 5px solid #a1a1a1;
+  margin-left: 20%;
+  width: 700px;
   padding: 10px 40px;
-  background: #0e4b65;
-  border-radius: 25px;
+  background-color: $testBackground;
 }
 
 #njForm {
-  border: 1px solid #c6c6c6;
+  width: 600px;
+  height: 50px;
   padding: 10px 40px;
-  background: #4e65d0;
-  border-radius: 25px;
 }
 
 #njFragenId {
