@@ -3,7 +3,7 @@
  */
 
 function saveQuestion() {
-    var data = ($("form").serialize());
+    var data = ($('form').serialize());
     console.log(data);
     var url = 'master.php?' + data;
     console.log(url);
@@ -38,8 +38,8 @@ function getAnzahlDerFragen() {
 
 function startQuiz() {
     var data = $('#njForm').serialize();
-    if (data == "") {
-        alert("bitte mindestens eine Kategorie auswählen !")
+    if (data == '') {
+        alert('bitte mindestens eine Kategorie auswählen !')
     } else {
         $.get('master.php?' + data,
             {
@@ -54,7 +54,7 @@ function startQuiz() {
 }
 
 function test() {
-    alert("test");
+    alert('test');
 }
 
 function loadQuestions() {
@@ -81,7 +81,7 @@ function progress(timeleft, timetotal, $element) {
     var progressBarWidth = timeleft * $element.width() / timetotal;
     $element
         .find('div')
-        .animate({ width: progressBarWidth }, timeleft == timetotal ? 0 : 1000, "linear")
+        .animate({ width: progressBarWidth }, timeleft == timetotal ? 0 : 1000, 'linear')
         .html(timeleft);
     if (timeleft >= 0 && checkProgressBar()) {
         setTimeout(function () {
@@ -94,8 +94,7 @@ function progress(timeleft, timetotal, $element) {
 };
 
 function checkProgressBar() {
-    var test = $('#progressBar').data('run');
-    return test;
+    return  $('#progressBar').data('run');
 }
 
 function stopProgressbar() {
@@ -106,13 +105,14 @@ function checkResults(answerNr) {
     $.get('master.php', {
         action: 'getAnswers'
     }, function (data) {
+        disableButtons();
         stopProgressbar();
         markButtonsRedAndGreed(answerNr, data);
     }, 'json')
 }
 
 function markButtonsRedAndGreed(answerNr, data) {
-    if (data[answerNr] == "1") {
+    if (data[answerNr] == '1') {
         markButtonRight(answerNr);
     } else {
         markButtonWrong(answerNr);
@@ -130,26 +130,34 @@ function getRightAnswerFromData(data) {
 }
 
 function markButtonRight(questionNr) {
-    $('#njAnswer' + (questionNr + 1)).css("background-color", "green");
+    $('#njAnswer' + (questionNr + 1)).css({
+        'background-color': 'green',
+        'fontSize' : '35px',
+        'fontFamily' : 'bold'
+    });
 }
 function markButtonWrong(questionNr) {
-    $('#njAnswer' + (questionNr + 1)).css("background-color", "red");
+    $('#njAnswer' + (questionNr + 1)).css({
+        'background-color': 'white',
+        'fontSize' : '10px'
+    });
 }
 
 
 function countdown() {
-    $('#countdown').ClassyCountdown({
-        theme: "black", // theme
-        format: 'S',
-        end: $.now() + 5, // end time
-        labels:true,
-        labelsOptions: {
-                lang: {
-      seconds: 'gleich geht es weiter !'
-    },
-    style: 'font-size: 0.5em;'
+    var counter = 4;
+    var interval = setInterval(function() {
+        counter--;
+        $('#countdown').html('&nbsp&nbsp&nbsp&nbsp weiter in '+counter+' Sekunden');
+        if (counter <= 0) {
+            clearInterval(interval);
+            console.log('weiter gehts !');
+            $('#countdown').empty();
+        }
+    }, 1000);
 }
 
-
-})
+function disableButtons(){
+    $('.njAntwortCss').attr('disabled', 'true');
 }
+

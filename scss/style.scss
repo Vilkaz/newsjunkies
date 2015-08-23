@@ -34,6 +34,17 @@ body{
   box-sizing: border-box;
 }
 
+
+#countdown{
+  margin-top: 15px;
+  width: 175px;
+  margin-left: 150px;
+  background-color: #CECECE;
+  border: 1px;
+  border-radius: 25px;
+  font-size: 15px;
+}
+
 //rework
 
 #njTimeRangeInput {
@@ -83,6 +94,7 @@ body{
   background: #bbc1d0;
   border-radius: 5px;
   width: 250px;
+  height: 150px;
   font-size: 16px;
   margin-top: 10px;
   margin-left: 10px;

@@ -36,12 +36,23 @@ body {
   box-sizing: border-box;
 }
 
-/* line 39, ../scss/style.scss */
+/* line 38, ../scss/style.scss */
+#countdown {
+  margin-top: 15px;
+  width: 175px;
+  margin-left: 150px;
+  background-color: #CECECE;
+  border: 1px;
+  border-radius: 25px;
+  font-size: 15px;
+}
+
+/* line 50, ../scss/style.scss */
 #njTimeRangeInput {
   width: 300px;
 }
 
-/* line 44, ../scss/style.scss */
+/* line 55, ../scss/style.scss */
 #startQuizBtn {
   margin-left: 175px;
   border: 2px solid #a1a1a1;
@@ -51,13 +62,13 @@ body {
   border-radius: 25px;
 }
 
-/* line 53, ../scss/style.scss */
+/* line 64, ../scss/style.scss */
 #startQuizBtn:hover {
   font-weight: bold;
   border-color: #000000;
 }
 
-/* line 58, ../scss/style.scss */
+/* line 69, ../scss/style.scss */
 #njMainContainer {
   margin-left: 20%;
   width: 700px;
@@ -65,14 +76,14 @@ body {
   background-color: #fefeff;
 }
 
-/* line 65, ../scss/style.scss */
+/* line 76, ../scss/style.scss */
 #njForm {
   width: 600px;
   height: 50px;
   padding: 10px 40px;
 }
 
-/* line 71, ../scss/style.scss */
+/* line 82, ../scss/style.scss */
 #njFragenId {
   font-weight: bold;
   width: 600px;
@@ -82,19 +93,20 @@ body {
   border-radius: 5px;
 }
 
-/* line 80, ../scss/style.scss */
+/* line 91, ../scss/style.scss */
 .njAntwortCss {
   border: 1px solid #c6c6c6;
   padding: 10px 20px;
   background: #bbc1d0;
   border-radius: 5px;
   width: 250px;
+  height: 150px;
   font-size: 16px;
   margin-top: 10px;
   margin-left: 10px;
 }
 
-/* line 91, ../scss/style.scss */
+/* line 103, ../scss/style.scss */
 .njAntwortCss:hover {
   font-size: 16px;
   font-weight: bold;
@@ -102,7 +114,7 @@ body {
   border: 10px #f4fff5;
 }
 
-/* line 98, ../scss/style.scss */
+/* line 110, ../scss/style.scss */
 .njAllgemeinCounter {
   border: 1px solid #c6c6c6;
   padding: 10px 20px;
@@ -113,13 +125,13 @@ body {
   margin-top: 10px;
 }
 
-/* line 108, ../scss/style.scss */
+/* line 120, ../scss/style.scss */
 #njRichtigeAntwortenCounter {
   margin-top: -38px;
   margin-left: 350px;
 }
 
-/* line 113, ../scss/style.scss */
+/* line 125, ../scss/style.scss */
 #nsGameOverTextField {
   width: 700px;
   border: 5px solid #a1a1a1;
@@ -128,7 +140,7 @@ body {
   border-radius: 25px;
 }
 
-/* line 121, ../scss/style.scss */
+/* line 133, ../scss/style.scss */
 #njPlayAgainBtn {
   margin-left: 250px;
   border: 2px solid #a1a1a1;
@@ -139,7 +151,7 @@ body {
   font-size: 18;
 }
 
-/* line 132, ../scss/style.scss */
+/* line 144, ../scss/style.scss */
 #njPlayAgainBtn:hover {
   font-weight: bold;
   border-color: #000000;
