@@ -82,8 +82,8 @@ function progress(timeleft, timetotal, $element) {
     $element
         .find('div')
         .animate({ width: progressBarWidth }, timeleft == timetotal ? 0 : 1000, 'linear')
-        .html(timeleft);
-    if (timeleft >= 0 && checkProgressBar()) {
+        //.html(timeleft);  //es zeigt die Zeit in Sekuden IM Balken an
+    if (timeleft >=0 && checkProgressBar()) {
         setTimeout(function () {
             progress(timeleft - 1, timetotal, $element);
         }, 1000);
@@ -161,3 +161,6 @@ function disableButtons(){
     $('.njAntwortCss').attr('disabled', 'true');
 }
 
+function createQuestionForEditor(type){
+    $('#njQuestionEditor').load('view/text_question.php');
+}
