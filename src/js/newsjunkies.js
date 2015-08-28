@@ -3,17 +3,22 @@
  */
 
 function saveQuestion() {
-    var data = ($('form').serialize());
-    console.log(data);
+    var data = ($('#njQuestionEditor').serialize());
     var url = 'master.php?' + data;
-    console.log(url);
     $.get(url, {
-        action: 'FrageSpeichern'
-
+        action       : 'FrageSpeichern',
+        questionText: $('#textQuestion').val(),
+        answer1: $('#njAnswer1').val(),  //es ist gleich mitternacht, ich weiss das es scheisse ist ok ? muss fertig werden.
+        answer2: $('#njAnswer2').val(),
+        answer3: $('#njAnswer3').val(),
+        answer4: $('#njAnswer4').val(),
+        qtype: $('#qtype').val(),
+        mediaURL:$('#mediaURL').val()
     }, function (data) {
         console.log(data);
     }, 'json')
 }
+
 
 
 function showNJTimeRange(value) {
@@ -161,10 +166,15 @@ function disableButtons(){
     $('.njAntwortCss').attr('disabled', 'true');
 }
 
+
+// verstos gegen oaoo .. ich weiss ...
 function createQuestionForEditor(type){
     switch (type){
         case ('text_question'):
             $('#njQuestionEditor').load('view/text_question.php');
+            break;
+        case ('img_question'):
+            $('#njQuestionEditor').load('view/img_questions.php');
             break;
          case ('video_question'):
             $('#njQuestionEditor').load('view/video_questions.php');
@@ -178,12 +188,17 @@ function createQuestionForEditor(type){
 
 function loadVideoIntoIframe(){
     $("#videoContainer").empty();
-    var videoURL = 'https://www.youtube.com/embed/'+$('#videoURL').val();
+    var videoURL = 'https://www.youtube.com/embed/'+$('#mediaURL').val();
     $("#videoContainer").empty().append($('<iframe width="420" height="315" frameborder="0" allowfullscreen></iframe>')
         .attr("src",videoURL));
 
 }
 
 function playNewURL(){
-    $("#audioPlayer").attr("src",$('#audioURL').val()).trigger("play");
+    $("#audioPlayer").attr("src",$('#mediaURL').val()).trigger("play");
 }
+
+function showImg(){
+    var file = $('#mediaURL').val();
+    $('#imgContainer').append('<img src='+file+'>');
+    }

@@ -1,1 +1,1 @@
-<input  id="submitQuestion" class="btn btn-default" value="Frage speichern" onclick="saveTextQuestion()">
+<input  id="submitQuestion" class="btn btn-default" value="Frage speichern" onclick="saveQuestion()">

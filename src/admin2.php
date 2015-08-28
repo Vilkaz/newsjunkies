@@ -16,14 +16,17 @@
         <h3>Fragentyp</h3>
         <label for="QuestionTypeText">Text</label>
         <input id="QuestionTypeText" type="radio" name="questionType" value="text_question" onchange="createQuestionForEditor('text_question')">
+        <label for="QuestionTypeBilder">Bilder</label>
+        <input id="QuestionTypeBilder" type="radio" name="questionType" value="text_question" onchange="createQuestionForEditor('img_question')">
         <label for="QuestionTypeVideo">Video</label>
         <input id="QuestionTypeVideo" type="radio" name="questionType" value="video_question" onchange="createQuestionForEditor('video_question')">
         <label for="QuestionTypeAudio">Audio</label>
         <input id="QuestionTypeAudio"  type="radio" name="questionType" value="audio_question" onchange="createQuestionForEditor('audio_question')">
     </div>
-    <div id="njQuestionEditor">
+    <form  id="njQuestionEditor">
 
-    </div>
+    </form>
+
 </div>
 
 

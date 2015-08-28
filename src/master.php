@@ -3,8 +3,10 @@ namespace src;
 
 use classes\Antwort;
 use classes\Frage;
+use classes\Media;
 use dao\AntwortDao;
 use dao\FrageDao;
+use dao\MediaDAO;
 use DateTime;
 
 session_start();
@@ -17,24 +19,28 @@ $action = $_REQUEST['action'];
 /**
  * @return string
  */
-function FrageSpeichern() {
+function FrageSpeichern()
+{
+
+    $media = new Media(null, $_REQUEST['mediaURL'], $_REQUEST['qtype']);
+    $media->setId(MediaDAO::insertMedia($media));
+
 
     $frage = new Frage(
-            null,
-            $_REQUEST['FragenText'],
-            null,
-            new DateTime('now')
+        null,
+        $_REQUEST['questionText'],
+        $media->getId(),
+        new DateTime('now')
     );
 
     $frageID = FrageDao::insertFrage($frage);
 
+    $antwort1 = new Antwort(null, $_REQUEST['answer1'], false, $frageID);
+    $antwort2 = new Antwort(null, $_REQUEST['answer2'], false, $frageID);
+    $antwort3 = new Antwort(null, $_REQUEST['answer3'], false, $frageID);
+    $antwort4 = new Antwort(null, $_REQUEST['answer4'], false, $frageID);
 
-    $antwort1 = new Antwort(null, $_REQUEST['antwort1'], false, $frageID);
-    $antwort2 = new Antwort(null, $_REQUEST['antwort2'], false, $frageID);
-    $antwort3 = new Antwort(null, $_REQUEST['antwort3'], false, $frageID);
-    $antwort4 = new Antwort(null, $_REQUEST['antwort4'], false, $frageID);
-
-    $richtigeAntwort = $_REQUEST['istrichtig'];
+    $richtigeAntwort = $_REQUEST['njAnswerRadiobutton'];
 
     switch ($richtigeAntwort) {
         case('1'):
@@ -59,87 +65,103 @@ function FrageSpeichern() {
     AntwortDao::insertAntwort($antwort3);
     AntwortDao::insertAntwort($antwort4);
 
-    if (isset($_REQUEST['rubrik1'])) {
-        FrageDao::setFragenRubrik($frageID, 1);
-    }
-    if (isset($_REQUEST['rubrik2'])) {
-        FrageDao::setFragenRubrik($frageID, 2);
-    }
-    if (isset($_REQUEST['rubrik3'])) {
-        FrageDao::setFragenRubrik($frageID, 3);
-    }
-    if (isset($_REQUEST['rubrik4'])) {
-        FrageDao::setFragenRubrik($frageID, 4);
-    }
-    if (isset($_REQUEST['rubrik5'])) {
-        FrageDao::setFragenRubrik($frageID, 5);
-    }
-    if (isset($_REQUEST['rubrik6'])) {
-        FrageDao::setFragenRubrik($frageID, 6);
-    }
+
+    FrageDao::setFragenRubrik($frageID, getRubrikID());
+
 
     return ("alels gut");
 
 }
-function getRubrikenIDs(){
+
+function getRubrikenIDs()
+{
     $rubrikIDs = array();
-    if (isset($_REQUEST['njBildertest'])){
-        $rubrikIDs[]=1;
+    if (isset($_REQUEST['njBildertest'])) {
+        $rubrikIDs[] = 1;
     }
-    if (isset($_REQUEST['njInland'])){
-        $rubrikIDs[]=2;
+    if (isset($_REQUEST['njInland'])) {
+        $rubrikIDs[] = 2;
     }
-    if (isset($_REQUEST['njAusland'])){
-        $rubrikIDs[]=3;
+    if (isset($_REQUEST['njAusland'])) {
+        $rubrikIDs[] = 3;
     }
-    if (isset($_REQUEST['njWirtschaft'])){
-        $rubrikIDs[]=4;
+    if (isset($_REQUEST['njWirtschaft'])) {
+        $rubrikIDs[] = 4;
     }
-    if (isset($_REQUEST['njKultur'])){
-        $rubrikIDs[]=5;
+    if (isset($_REQUEST['njKultur'])) {
+        $rubrikIDs[] = 5;
     }
-    if (isset($_REQUEST['njSport'])){
-        $rubrikIDs[]=6;
+    if (isset($_REQUEST['njSport'])) {
+        $rubrikIDs[] = 6;
     }
 
     return $rubrikIDs;
 }
 
+function getRubrikID()
+{
+    $rubrik = "";
+    switch ($_REQUEST['questionCategory']) {
+        case 'picture':
+            $rubrik = 1;
+            break;
+        case 'innland':
+            $rubrik = 2;
+            break;
+        case 'ausland':
+            $rubrik = 3;
+            break;
+        case 'wirtschaft':
+            $rubrik = 4;
+            break;
+        case 'kultur':
+            $rubrik = 5;
+            break;
+        case 'sport':
+            $rubrik = 6;
+            break;
+    }
+    return $rubrik;
+}
 
 
-function getAnzahlDerFragen(){
+function getAnzahlDerFragen()
+{
     $rubrikIDs = getRubrikenIDs();
     $fragenIdArray = FrageDao::getAllFragenIDsByRubrikID($rubrikIDs);
-    $length =  count($fragenIdArray);
+    $length = count($fragenIdArray);
     return $length;
 }
 
-function startQuiz(){
+function startQuiz()
+{
     $rubrikIDs = $_REQUEST['njCategory'];
     $fragenIDs = FrageDao::getAllFragenIDsByRubrikID($rubrikIDs);
-    $fixedIDs =fixArray($fragenIDs);
+    $fixedIDs = fixArray($fragenIDs);
     $fragenSets = FrageDao::getFragenWithAntwortenByIdArray($fixedIDs);
-    $_SESSION['fragenSets']=serialize($fragenSets);
-    $_SESSION['fragenNr']=0;
-    $_SESSION['richtigeAntworten']=0;
+    $_SESSION['fragenSets'] = serialize($fragenSets);
+    $_SESSION['fragenNr'] = 0;
+    $_SESSION['richtigeAntworten'] = 0;
     return "okok";
 }
 
-function fixArray($array){
+function fixArray($array)
+{
     $result = array();
     foreach ($array as $key => $value) {
-        $result[]=$value['frage_id'];
+        $result[] = $value['frage_id'];
     }
     return $result;
 
 }
 
 
-function checkAntwort(){
+function checkAntwort()
+{
     $fragen = unserialize($_SESSION['fragenSets']);
     $frageNr = $_SESSION['fragenNr'];
     $antwortNr = $_REQUEST['answerNr'];
-    $test =  $fragen[$frageNr]->getAntworten();
+    $test = $fragen[$frageNr]->getAntworten();
     $isTrue = $test[$antwortNr]->getIstRichtig();
     $_SESSION['fragenNr']++;
     addPoints($isTrue);
@@ -147,19 +169,21 @@ function checkAntwort(){
 }
 
 
-function addPoints($isRight){
-    if ($isRight==1){
+function addPoints($isRight)
+{
+    if ($isRight == 1) {
         $_SESSION['richtigeAntworten']++;
     }
 }
 
-function getAnswers(){
+function getAnswers()
+{
     $fragen = unserialize($_SESSION['fragenSets']);
     $frageNr = $_SESSION['fragenNr'];
-    return  $fragen[$frageNr]->getAnswerTruthList();
+    return $fragen[$frageNr]->getAnswerTruthList();
 }
 
-$test= 1;
+$test = 1;
 switch ($action) {
     case ('FrageSpeichern'):
         print(json_encode(FrageSpeichern()));

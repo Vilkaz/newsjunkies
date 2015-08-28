@@ -1,36 +1,37 @@
 /* line 6, ../scss/style.scss */
 #audioPlayer {
   margin-top: 10px;
+  margin-left: 20px;
 }
 
-/* line 10, ../scss/style.scss */
-#videoURL {
+/* line 11, ../scss/style.scss */
+#mediaURL {
   width: 75%;
   margin-bottom: 10px;
 }
 
-/* line 15, ../scss/style.scss */
+/* line 16, ../scss/style.scss */
 #njQuestiontype {
   display: inline-block;
 }
 
-/* line 20, ../scss/style.scss */
+/* line 21, ../scss/style.scss */
 body {
   background-color: #f0ece5;
 }
 
-/* line 24, ../scss/style.scss */
+/* line 25, ../scss/style.scss */
 #njLogo_img {
   background-color: #2568B4;
   width: 600px;
 }
 
-/* line 29, ../scss/style.scss */
+/* line 30, ../scss/style.scss */
 #njInnerContent {
   background-color: #FEFEFF;
 }
 
-/* line 33, ../scss/style.scss */
+/* line 34, ../scss/style.scss */
 #progressBar {
   width: 600px;
   height: 22px;
@@ -40,7 +41,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* line 41, ../scss/style.scss */
+/* line 42, ../scss/style.scss */
 #progressBar div {
   height: 100%;
   color: #fff;
@@ -52,7 +53,7 @@ body {
   box-sizing: border-box;
 }
 
-/* line 52, ../scss/style.scss */
+/* line 53, ../scss/style.scss */
 #countdown {
   margin-top: 15px;
   width: 175px;
@@ -63,31 +64,31 @@ body {
   font-size: 15px;
 }
 
-/* line 62, ../scss/style.scss */
+/* line 63, ../scss/style.scss */
 #textQuestion {
   width: 550px;
   height: 250px;
 }
 
-/* line 67, ../scss/style.scss */
+/* line 68, ../scss/style.scss */
 #submitQuestion {
   margin-top: 25px;
   margin-left: 150px;
 }
 
-/* line 72, ../scss/style.scss */
+/* line 73, ../scss/style.scss */
 .njAdminQuestionarea {
   width: 220px;
   height: 100px;
   font-size: 18px;
 }
 
-/* line 80, ../scss/style.scss */
+/* line 81, ../scss/style.scss */
 #njTimeRangeInput {
   width: 300px;
 }
 
-/* line 85, ../scss/style.scss */
+/* line 86, ../scss/style.scss */
 #startQuizBtn {
   margin-left: 175px;
   border: 2px solid #a1a1a1;
@@ -97,13 +98,13 @@ body {
   border-radius: 25px;
 }
 
-/* line 94, ../scss/style.scss */
+/* line 95, ../scss/style.scss */
 #startQuizBtn:hover {
   font-weight: bold;
   border-color: #000000;
 }
 
-/* line 99, ../scss/style.scss */
+/* line 100, ../scss/style.scss */
 #njMainContainer {
   margin-left: 20%;
   width: 700px;
@@ -111,14 +112,14 @@ body {
   background-color: #fefeff;
 }
 
-/* line 106, ../scss/style.scss */
+/* line 107, ../scss/style.scss */
 #njForm {
   width: 600px;
   height: 50px;
   padding: 10px 40px;
 }
 
-/* line 112, ../scss/style.scss */
+/* line 113, ../scss/style.scss */
 #njFragenId {
   font-weight: bold;
   width: 600px;
@@ -128,7 +129,7 @@ body {
   border-radius: 5px;
 }
 
-/* line 121, ../scss/style.scss */
+/* line 122, ../scss/style.scss */
 .njAntwortCss {
   border: 1px solid #c6c6c6;
   padding: 10px 20px;
@@ -141,7 +142,7 @@ body {
   margin-left: 10px;
 }
 
-/* line 133, ../scss/style.scss */
+/* line 134, ../scss/style.scss */
 .njAntwortCss:hover {
   font-size: 16px;
   font-weight: bold;
@@ -149,7 +150,7 @@ body {
   border: 10px #f4fff5;
 }
 
-/* line 140, ../scss/style.scss */
+/* line 141, ../scss/style.scss */
 .njAllgemeinCounter {
   border: 1px solid #c6c6c6;
   padding: 10px 20px;
@@ -160,13 +161,13 @@ body {
   margin-top: 10px;
 }
 
-/* line 150, ../scss/style.scss */
+/* line 151, ../scss/style.scss */
 #njRichtigeAntwortenCounter {
   margin-top: -38px;
   margin-left: 350px;
 }
 
-/* line 155, ../scss/style.scss */
+/* line 156, ../scss/style.scss */
 #nsGameOverTextField {
   width: 700px;
   border: 5px solid #a1a1a1;
@@ -175,7 +176,7 @@ body {
   border-radius: 25px;
 }
 
-/* line 163, ../scss/style.scss */
+/* line 164, ../scss/style.scss */
 #njPlayAgainBtn {
   margin-left: 250px;
   border: 2px solid #a1a1a1;
@@ -186,7 +187,7 @@ body {
   font-size: 18;
 }
 
-/* line 174, ../scss/style.scss */
+/* line 175, ../scss/style.scss */
 #njPlayAgainBtn:hover {
   font-weight: bold;
   border-color: #000000;
