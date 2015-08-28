@@ -12,12 +12,12 @@
 </head>
 <body>
 <div id="njMainContainer">
-    <div id="njFrageType">
+    <div id="njQuestiontype">
         <h3>Fragentyp</h3>
         <label for="QuestionTypeText">Text</label>
         <input id="QuestionTypeText" type="radio" name="questionType" value="text_question" onchange="createQuestionForEditor('text_question')">
         <label for="QuestionTypeVideo">Video</label>
-        <input id="QuestionTypeVideo" type="radio" name="questionType" value="video_question">
+        <input id="QuestionTypeVideo" type="radio" name="questionType" value="video_question" onchange="createQuestionForEditor('video_question')">
         <label for="QuestionTypeAudio">Audio</label>
         <input id="QuestionTypeAudio"  type="radio" name="questionType" value="audio_question">
     </div>

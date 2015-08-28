@@ -32,3 +32,7 @@
         </div>
     </div>
 </div>
+
+<?php
+require_once('question_category.php');
+require_once('submit_button.php');

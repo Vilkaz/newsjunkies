@@ -162,5 +162,17 @@ function disableButtons(){
 }
 
 function createQuestionForEditor(type){
-    $('#njQuestionEditor').load('view/text_question.php');
+    switch (type){
+        case ('text_question'):
+            $('#njQuestionEditor').load('view/text_question.php');
+            break;
+         case ('video_question'):
+            $('#njQuestionEditor').load('view/video_questions.php');
+            break;
+    }
+
+}
+
+function loadVideoIntoIframe(){
+
 }

@@ -3,6 +3,16 @@ $textBackground: #FEFEFF;
 
 //rework
 
+#videoQuestion{
+  width:100%;
+  margin-bottom: 10px;
+}
+
+#njQuestiontype{
+  display: inline-block;
+}
+
+
 body{
   background-color: #f0ece5;
 }
@@ -48,6 +58,11 @@ body{
 #textQuestion{
   width: 550px;
   height: 250px;
+}
+
+#submitQuestion{
+  margin-top: 25px;
+    margin-left: 150px  ;
 }
 
 .njAdminQuestionarea{
