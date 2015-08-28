@@ -1,10 +1,10 @@
-<input id="videoQuestion" value="" placeholder="video URL, zb https://www.youtube.com/watch?v=rp8hvyjZWHs">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rp8hvyjZWHs"
-        frameborder="0"
-        allowfullscreen
-        end="3"
-        autoplay="1"></iframe>
+<input id="videoURL" value="" placeholder="nur video ID, z.B. rp8hvyjZWHs in youtube.com/watch?v=rp8hvyjZWHs">
+<input  class="btn btn-default" onclick="loadVideoIntoIframe()" type="button" value="load Video">
+<div id="videoContainer">
+
+</div>
 <br>
 <form>
     <?php require_once('empty_answers.php') ?>
 </form>
+<input  id="submitQuestion" class="btn btn-default" value="Frage speichern" onclick="saveVideoQuestion()">

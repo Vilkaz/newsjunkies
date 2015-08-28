@@ -19,7 +19,7 @@
         <label for="QuestionTypeVideo">Video</label>
         <input id="QuestionTypeVideo" type="radio" name="questionType" value="video_question" onchange="createQuestionForEditor('video_question')">
         <label for="QuestionTypeAudio">Audio</label>
-        <input id="QuestionTypeAudio"  type="radio" name="questionType" value="audio_question">
+        <input id="QuestionTypeAudio"  type="radio" name="questionType" value="audio_question" onchange="createQuestionForEditor('audio_question')">
     </div>
     <div id="njQuestionEditor">
 

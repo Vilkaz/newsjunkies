@@ -19,18 +19,16 @@ class MyPDO
     private $stmt;
 
 
-    private $host = "localhost";
-    private $dbname = "newsjunkies";
-    private $user = "root";
-    private $pass ="";
+//    private $host = "localhost";
+//    private $dbname = "newsjunkies";
+//    private $user = "root";
+//    private $pass ="";
 
 
-    /*
     private $host = "db580751936.db.1and1.com";
     private $dbname = "db580751936";
     private $user = "dbo580751936";
     private $pass = "N3WsJuNk1eSH4Ck4T0N";
-*/
 
     /** @var myPDO */
     private static $pdo;

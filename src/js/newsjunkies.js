@@ -169,10 +169,21 @@ function createQuestionForEditor(type){
          case ('video_question'):
             $('#njQuestionEditor').load('view/video_questions.php');
             break;
+         case ('audio_question'):
+            $('#njQuestionEditor').load('view/audio_questions.php');
+            break;
     }
 
 }
 
 function loadVideoIntoIframe(){
+    $("#videoContainer").empty();
+    var videoURL = 'https://www.youtube.com/embed/'+$('#videoURL').val();
+    $("#videoContainer").empty().append($('<iframe width="420" height="315" frameborder="0" allowfullscreen></iframe>')
+        .attr("src",videoURL));
 
+}
+
+function playNewURL(){
+    $("#audioPlayer").attr("src",$('#audioURL').val()).trigger("play");
 }

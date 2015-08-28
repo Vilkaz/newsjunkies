@@ -17,7 +17,7 @@ echo'<script>progress(15, 15, $("#progressBar"))</script>';
 
     if ($frageNr < sizeof($fragen)) {
         /** hier sind die variablen, die man zum schluss ausgeben sollte */
-    echo('<div> <div  class="njAllgemeinCounter">Frage nr ' . ($frageNr+1) . '</div><div id="njRichtigeAntwortenCounter" class="njAllgemeinCounter">richtige Antworten soweit : '.$rightAnswers.'</div> </div>');
+    //echo('<div> <div  class="njAllgemeinCounter">Frage nr ' . ($frageNr+1) . '</div><div id="njRichtigeAntwortenCounter" class="njAllgemeinCounter">richtige Antworten soweit : '.$rightAnswers.'</div> </div>');
     echo'<br><div id="progressBar" data-run=true><div></div></div>';
         showQuestion($fragen[$frageNr]);
         echo'<div id="countdown"></div>';
