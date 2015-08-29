@@ -1,4 +1,4 @@
-<div id="njMainContainer">
+
     <img id="njLogo_img" src="img/news-junkies_logo.png">
     <div id="njInnerContent">
         <h3>Herzlich wilkommen auf der Newsjunkie Seite ! </h3></br>
@@ -37,5 +37,4 @@
         <input id="startQuizBtn" class="btn btn-default" type="button" value="Quiz Starten ! " onclick="startQuiz()">
     </div>
 
-</div>
 

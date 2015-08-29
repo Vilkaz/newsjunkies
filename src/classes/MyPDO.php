@@ -12,7 +12,7 @@ use PDOException;
  * Time: 09:47
  *
  */
-class MyPDO
+class MyPDO extends PDO
 {
     private $dbh;
     private $error;

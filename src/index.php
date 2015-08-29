@@ -11,9 +11,9 @@
     <title></title>
 </head>
 <body>
-<div>
+<div id="njMainContainer">
     <?php
-    require_once 'quiz2.php';
+    require_once 'view/selectMenu.php';
     ?>
 </div>
 </body>

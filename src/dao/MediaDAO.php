@@ -3,6 +3,7 @@ namespace dao;
 
 use classes\Media;
 use classes\MyPDO;
+use PDO;
 
 /**
  * Erstellung:              6/17/15
@@ -30,7 +31,8 @@ class MediaDAO
     public static function getMediaByID($id)
     {
         $db = MyPDO::getInstance();
-        $db->query('SELECT url, \'type\' from media WHERE id=:id');
+        $db->query('SELECT url, type from media WHERE id=:id');
+        $db->bindVal(':id', $id, PDO::PARAM_INT);
         $result = $db->single();
         return new Media($id, $result['url'], $result['type']);
 

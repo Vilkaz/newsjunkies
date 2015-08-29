@@ -81,18 +81,17 @@ function test() {
 }
 
 function loadQuestions() {
-    $('#njInnerContent').load('frageTemplate.php');
+    $('#njInnerContent').load('view/frage_view.php');
 }
 
-function checkAnswer(antwortNr, divID) {
-    $.get('master.php', {
-        action: 'checkAnswer',
-        answerNr: antwortNr
-    }, function (data) {
-        $('#njInnerContent').load('frageTemplate.php');
-        ;
-    }, 'json')
-}
+//function checkAnswer(antwortNr, divID) {
+//    $.get('master.php', {
+//        action: 'checkAnswer',
+//        answerNr: antwortNr
+//    }, function (data) {
+//        $('#njInnerContent').load('frageTemplate.php');
+//    }, 'json')
+//}
 
 
 function njPlayAgain() {
@@ -134,6 +133,12 @@ function checkResults(answerNr) {
     }, 'json')
 }
 
+
+
+function nextQuestion(){
+    $('#njInnerContent').load('frageTemplate.php');
+}
+
 function markButtonsRedAndGreed(answerNr, data) {
     if (data[answerNr] == '1') {
         njPlaySound('audio/singleClap.mp3');
@@ -148,7 +153,7 @@ function markButtonsRedAndGreed(answerNr, data) {
 
 function getRightAnswerFromData(data) {
     for (var i = 0; i <= 3; i++) {
-        if (data[i] = 1) {
+        if (data[i] == 1) {
             return i;
         }
     }
@@ -176,12 +181,16 @@ function countdown() {
             clearInterval(interval);
             console.log('weiter gehts !');
             $('#countdown').empty();
+            nextQuestion();
         }
     }, 1000);
 }
 
 function disableButtons() {
     $('.njAntwortCss').attr('disabled', 'true');
+}
+function enableButtons() {
+    $('.njAntwortCss').attr('disabled', 'false');
 }
 
 

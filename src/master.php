@@ -22,14 +22,19 @@ $action = $_REQUEST['action'];
 function FrageSpeichern()
 {
 
-    $media = new Media(null, $_REQUEST['mediaURL'], $_REQUEST['qtype']);
-    $media->setId(MediaDAO::insertMedia($media));
+   if ( $_REQUEST['qtype']!=='text'){
+       $media = new Media(null, $_REQUEST['mediaURL'], $_REQUEST['qtype']);
+       $mediaID= MediaDAO::insertMedia($media);
+   } else{
+       $mediaID=null;
+   }
+
 
 
     $frage = new Frage(
         null,
         $_REQUEST['questionText'],
-        $media->getId(),
+        $mediaID,
         new DateTime('now')
     );
 
@@ -135,8 +140,8 @@ function getAnzahlDerFragen()
 
 function startQuiz()
 {
-    $rubrikIDs = $_REQUEST['njCategory'];
-    $fragenIDs = FrageDao::getAllFragenIDsByRubrikID($rubrikIDs);
+    $rubrikID = $_REQUEST['njCategory'];
+    $fragenIDs = FrageDao::getAllFragenIDsByRubrikID($rubrikID);
     $fixedIDs = fixArray($fragenIDs);
     $fragenSets = FrageDao::getFragenWithAntwortenByIdArray($fixedIDs);
     $_SESSION['fragenSets'] = serialize($fragenSets);
@@ -163,7 +168,7 @@ function checkAntwort()
     $antwortNr = $_REQUEST['answerNr'];
     $test = $fragen[$frageNr]->getAntworten();
     $isTrue = $test[$antwortNr]->getIstRichtig();
-    $_SESSION['fragenNr']++;
+    //$_SESSION['fragenNr']++;
     addPoints($isTrue);
     return $isTrue;
 }
