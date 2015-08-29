@@ -7,8 +7,14 @@ require_once 'classes/myAutoloader.php';
 
 session_start();
 
-$fragen = unserialize($_SESSION['fragenSets']);
+// WTF hab ich hier gemacht -.- scheisse ....
+?>
+    <input id="audioPlayed" value="false" type="hidden"> <!-- wieder quick and dirty ... fix it damit dersound nicht zweimal spielt -->
+    <div id="audioDIV">
+    </div>
+<?php
 
+$fragen = unserialize($_SESSION['fragenSets']);
 $frageNr = $_SESSION['fragenNr'];
 
 $rightAnswers  = $_SESSION['richtigeAntworten'];
