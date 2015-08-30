@@ -147,7 +147,8 @@ function startQuiz()
     $_SESSION['fragenSets'] = serialize($fragenSets);
     $_SESSION['fragenNr'] = 0;
     $_SESSION['richtigeAntworten'] = 0;
-    return "okok";
+    $_SESSION['phase'] = 'frage_view';
+    return "ok";
 }
 
 function fixArray($array)
@@ -188,7 +189,7 @@ function getAnswers()
     return $fragen[$frageNr]->getAnswerTruthList();
 }
 
-$test = 1;
+
 switch ($action) {
     case ('FrageSpeichern'):
         print(json_encode(FrageSpeichern()));

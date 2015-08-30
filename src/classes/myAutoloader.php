@@ -9,7 +9,7 @@
 function myAutoloader($className) {
     $className = str_replace('\\', '/', $className);
     //$root = '/home/vk/projects/verwaltung/dm/'; // tests laufen nur wenn root so gegeben ist
-    $root='/'; //damit lief die Seite aber vorhin auch.
+    $root=''; //damit lief die Seite aber vorhin auch.
     $file = $root . $className . '.php';
     if (file_exists($file)) {
         require_once($file);
