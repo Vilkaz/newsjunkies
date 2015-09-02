@@ -81,7 +81,8 @@ function test() {
 }
 
 function loadQuestions() {
-    $('#njInnerContent').load('view/frage_view.php');
+    reloadSite();
+    //$('#njInnerContent').load('view/content.php');
 }
 
 //function checkAnswer(antwortNr, divID) {
@@ -94,7 +95,7 @@ function loadQuestions() {
 //}
 
 
-function njPlayAgain() {
+function reloadSite() {
     location.reload();
 }
 
@@ -110,8 +111,11 @@ function progress(timeleft, timetotal, $element) {
             progress(timeleft - 1, timetotal, $element);
         }, 1000);
     } else {
-        stopProgressbar();
-        checkResults();
+        if (timeleft <= 0 ){
+            stopProgressbar();
+            checkResults();
+        }
+
     }
 };
 
@@ -130,13 +134,13 @@ function checkResults(answerNr) {
         disableButtons();
         stopProgressbar();
         markButtonsRedAndGreed(answerNr, data);
+        countdown();
     }, 'json')
 }
 
 
-
-function nextQuestion(){
-    $('#njInnerContent').load('frageTemplate.php');
+function nextQuestion() {
+    $('#njMainContainer').load('content.php');
 }
 
 function markButtonsRedAndGreed(answerNr, data) {
@@ -147,7 +151,6 @@ function markButtonsRedAndGreed(answerNr, data) {
         njPlaySound('audio/shateredGlass.mp3');
         markButtonWrong(answerNr);
         markButtonRight(getRightAnswerFromData(data));
-        countdown();
     }
 }
 
@@ -168,7 +171,11 @@ function markButtonRight(questionNr) {
 
 }
 function markButtonWrong(questionNr) {
-    $('#njAnswer' + (questionNr + 1)).effect('explode');
+    $('#njAnswer' + (questionNr + 1)).effect('explode', { pieces: 16 }, 500, function () {
+        $('#njAnswer' + (questionNr + 1)).show().css({
+            'background-color': 'red'
+        });
+    });
 }
 
 
@@ -181,16 +188,16 @@ function countdown() {
             clearInterval(interval);
             console.log('weiter gehts !');
             $('#countdown').empty();
-            nextQuestion();
+            reloadSite();
         }
     }, 1000);
 }
 
 function disableButtons() {
-    $('.njAntwortCss').attr('disabled', 'true');
+    $('.njQuizAnswerButton').attr('disabled', 'true');
 }
 function enableButtons() {
-    $('.njAntwortCss').attr('disabled', 'false');
+    $('.njQuizAnswerButton').attr('disabled', 'false');
 }
 
 

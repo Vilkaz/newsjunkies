@@ -1,9 +1,27 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: Vilkaz
- * Date: 22.08.2015
- * Time: 11:17
- */
 namespace src;
-require_once('view/selectMenu.php');
+
+use classes\Frage;
+
+require_once 'classes/myAutoloader.php';
+require 'view/main_header.php';
+session_start();
+?>
+
+
+    <div id="njMainContainer">
+        <?php
+        require_once 'view/'.getSite().'.php';
+        ?>
+    </div>
+    </body>
+    </html>
+
+<?php
+function getSite()
+{
+    if (isset($_GET['site'])) {
+        return $_GET['site'];
+    }
+    return 'selectMenu';
+}

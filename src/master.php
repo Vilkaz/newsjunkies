@@ -186,7 +186,12 @@ function getAnswers()
 {
     $fragen = unserialize($_SESSION['fragenSets']);
     $frageNr = $_SESSION['fragenNr'];
-    return $fragen[$frageNr]->getAnswerTruthList();
+    $isTrue = $test[$antwortNr]->getIstRichtig();
+    addPoints($isTrue);
+//    if ($frageNr>sizeof($fragen)){
+//       $_SESSION['phase']='endQuiz';
+//    }
+    return $fragen[--$frageNr]->getAnswerTruthList();
 }
 
 

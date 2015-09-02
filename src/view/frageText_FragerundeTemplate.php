@@ -1,0 +1,1 @@
+<input id="textQuestion" type="button" disabled value="<?php echo($fragenRunde->getFrage()->getText())  ?>">
