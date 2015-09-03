@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="4013404090">
+  <component name="DataSourceManagerImpl" format="xml" hash="1395764171">
     <data-source source="LOCAL" name="MySQL - newsjunkies@localhost" uuid="975f5c3a-fc9e-4338-874b-901e47d79bc1">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/newsjunkies</jdbc-url>
-      <user-name>root</user-name>
       <driver-properties>
         <property name="zeroDateTimeBehavior" value="convertToNull" />
         <property name="tinyInt1isBit" value="false" />
@@ -18,14 +17,25 @@
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://db580751936.db.1and1.com:3306/db580751936</jdbc-url>
-      <user-name>dbo580751936</user-name>
-      <user-password>dfe4df99dffddfd9dfe0dfdfdfe4dfc1df9bdfcfdff9dfe2df9edfe9dfc1df9edffedf9adfe4</user-password>
       <driver-properties>
         <property name="zeroDateTimeBehavior" value="convertToNull" />
         <property name="tinyInt1isBit" value="false" />
       </driver-properties>
       <libraries />
     </data-source>
+    <data-source source="LOCAL" name="Linux Leptop MySQL - newsjunkies@localhost" uuid="d19ddb48-6dd2-416f-8e33-05d12328d145">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/newsjunkies</jdbc-url>
+      <driver-properties>
+        <property name="zeroDateTimeBehavior" value="convertToNull" />
+        <property name="tinyInt1isBit" value="false" />
+        <property name="characterEncoding" value="utf8" />
+        <property name="characterSetResults" value="utf8" />
+        <property name="yearIsDateType" value="false" />
+      </driver-properties>
+      <libraries />
+    </data-source>
   </component>
 </project>
-

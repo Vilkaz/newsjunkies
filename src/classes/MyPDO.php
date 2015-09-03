@@ -22,7 +22,12 @@ class MyPDO extends PDO
     private $host = "localhost";
     private $dbname = "newsjunkies";
     private $user = "root";
-    private $pass ="";
+    private $pass ="km#fexu21";
+
+//mys
+//    private $dbname = "newsjunkies";
+//    private $user = "root";
+//    private $pass ="";
 
 
 //    private $host = "db580751936.db.1and1.com";

@@ -14,6 +14,7 @@ use dao\MediaDAO;
 
 require_once ('classes/myAutoloader.php');
 
+
 /** @var FragenRunde $fragenRunde */
 //$fragenRunde = FrageViewController::getFrage();
 
@@ -21,11 +22,14 @@ $fragen = unserialize($_SESSION['fragenSets']);
 $frageNr = $_SESSION['fragenNr'];
 $fragenRunde =  $fragen[$frageNr];
 
-
 /** mal wieder sieht man,l Mediaid war zu wenig, wir brauchen Media objekt :(  */
 $mediaID = $fragenRunde->getFrage()->getMediaId();
 $media = MediaDAO::getMediaByID($mediaID);
 
+
+if ($media->getType()==null){
+    $media->setType('text');
+}
 
 $filename = $media->getType().'_FragerundeTemplate.php';
 

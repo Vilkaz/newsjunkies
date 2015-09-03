@@ -26,7 +26,28 @@ class Media {
 
 
 
+
+
+
     //region geter and setter
+
+    /**
+     * @param String $type
+     */
+    public function setType($type) {
+        $this->type = $type;
+    }
+
+
+    /**
+        * @param String $mediaURL
+        */
+       public function setMediaURL($mediaURL) {
+           $this->mediaURL = $mediaURL;
+       }
+
+
+
     /**
      * @param int $id
      */

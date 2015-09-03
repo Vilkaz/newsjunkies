@@ -3,6 +3,11 @@ $textBackground: #FEFEFF;
 
 //rework
 
+#quiz2{
+  margin-left: 10%;
+  width: 80%;
+}
+
 #audioPlayer{
   margin-top: 10px;
   margin-left: 20px;
@@ -62,7 +67,7 @@ body{
 
 #textQuestion{
   width: 550px;
-  height: 100px;
+  height: 250px;
 }
 
 #submitQuestion{
@@ -106,6 +111,8 @@ body{
 }
 
 #njMainContainer {
+  margin-left: 5%;
+  width: 700px;
   padding: 10px 40px;
   background-color: $textBackground;
 }

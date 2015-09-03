@@ -75,15 +75,26 @@ function startQuiz() {
     }
 
 }
+function startQuiz2() {
+    var data = $('#njForm').serialize();
+    if (data == '') {
+        alert('bitte mindestens eine Kategorie auswählen !')
+    } else {
+        window.location.replace('startQuiz.php?'+data);
+    }
+
+}
 
 function test() {
     alert('test');
 }
 
 function loadQuestions() {
-    reloadSite();
+    document.location.href = 'startQuiz.php';
+    //reloadSite();
     //$('#njInnerContent').load('view/content.php');
 }
+
 
 //function checkAnswer(antwortNr, divID) {
 //    $.get('master.php', {
@@ -96,7 +107,16 @@ function loadQuestions() {
 
 
 function reloadSite() {
-    location.reload();
+    $.post('master2.php', {
+           action: 'checkQuizEnd'
+       }, function (data) {
+           if (data=="JA"){
+               location.replace("quizEnd.php");
+           } else{
+               location.reload();
+           }
+       }, 'json')
+
 }
 
 
@@ -128,8 +148,19 @@ function stopProgressbar() {
 }
 
 function checkResults(answerNr) {
-    $.get('master.php', {
+    $.get('master2.php', {
         action: 'getAnswers'
+    }, function (data) {
+        disableButtons();
+        stopProgressbar();
+        markButtonsRedAndGreed(answerNr, data);
+        countdown();
+    }, 'json')
+}
+function checkResults2(answerNr) {
+    $.post('master2.php', {
+        action: 'getAnswers',
+        answerNr:answerNr
     }, function (data) {
         disableButtons();
         stopProgressbar();
@@ -237,6 +268,9 @@ function showImg() {
     var file = $('#mediaURL').val();
     $('#imgContainer').append('<img src=' + file + '>');
 }
+
+
+
 
 //extern functions
 function njPlaySound(url) {

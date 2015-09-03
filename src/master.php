@@ -3,6 +3,7 @@ namespace src;
 
 use classes\Antwort;
 use classes\Frage;
+use classes\FragenRunde;
 use classes\Media;
 use dao\AntwortDao;
 use dao\FrageDao;
@@ -13,29 +14,31 @@ session_start();
 
 require_once 'classes/myAutoloader.php';
 
+
+var_dump($_REQUEST);
+
 $action = $_REQUEST['action'];
 //$data = $_REQUEST['data'];
 
 /**
  * @return string
  */
-function FrageSpeichern()
-{
+function FrageSpeichern() {
 
-   if ( $_REQUEST['qtype']!=='text'){
-       $media = new Media(null, $_REQUEST['mediaURL'], $_REQUEST['qtype']);
-       $mediaID= MediaDAO::insertMedia($media);
-   } else{
-       $mediaID=null;
-   }
-
+    if ($_REQUEST['qtype'] !== 'text') {
+        $media   = new Media(null, $_REQUEST['mediaURL'], $_REQUEST['qtype']);
+        $mediaID = MediaDAO::insertMedia($media);
+    }
+    else {
+        $mediaID = null;
+    }
 
 
     $frage = new Frage(
-        null,
-        $_REQUEST['questionText'],
-        $mediaID,
-        new DateTime('now')
+            null,
+            $_REQUEST['questionText'],
+            $mediaID,
+            new DateTime('now')
     );
 
     $frageID = FrageDao::insertFrage($frage);
@@ -78,8 +81,7 @@ function FrageSpeichern()
 
 }
 
-function getRubrikenIDs()
-{
+function getRubrikenIDs() {
     $rubrikIDs = array();
     if (isset($_REQUEST['njBildertest'])) {
         $rubrikIDs[] = 1;
@@ -103,8 +105,7 @@ function getRubrikenIDs()
     return $rubrikIDs;
 }
 
-function getRubrikID()
-{
+function getRubrikID() {
     $rubrik = "";
     switch ($_REQUEST['questionCategory']) {
         case 'picture':
@@ -126,72 +127,77 @@ function getRubrikID()
             $rubrik = 6;
             break;
     }
+
     return $rubrik;
 }
 
 
-function getAnzahlDerFragen()
-{
-    $rubrikIDs = getRubrikenIDs();
+function getAnzahlDerFragen() {
+    $rubrikIDs     = getRubrikenIDs();
     $fragenIdArray = FrageDao::getAllFragenIDsByRubrikID($rubrikIDs);
-    $length = count($fragenIdArray);
+    $length        = count($fragenIdArray);
+
     return $length;
 }
 
-function startQuiz()
-{
-    $rubrikID = $_REQUEST['njCategory'];
-    $fragenIDs = FrageDao::getAllFragenIDsByRubrikID($rubrikID);
-    $fixedIDs = fixArray($fragenIDs);
-    $fragenSets = FrageDao::getFragenWithAntwortenByIdArray($fixedIDs);
-    $_SESSION['fragenSets'] = serialize($fragenSets);
-    $_SESSION['fragenNr'] = 0;
+function startQuiz() {
+    $rubrikID                      = $_REQUEST['njCategory'];
+    $fragenIDs                     = FrageDao::getAllFragenIDsByRubrikID($rubrikID);
+    $fixedIDs                      = fixArray($fragenIDs);
+    $fragenSets                    = FrageDao::getFragenWithAntwortenByIdArray($fixedIDs);
+    $_SESSION['fragenSets']        = serialize($fragenSets);
+    $_SESSION['fragenNr']          = 0;
     $_SESSION['richtigeAntworten'] = 0;
-    $_SESSION['phase'] = 'frage_view';
+    $_SESSION['phase']             = 'frage_view';
+    var_dump($_SESSION);
+
     return "ok";
 }
 
-function fixArray($array)
-{
+function fixArray($array) {
     $result = array();
     foreach ($array as $key => $value) {
         $result[] = $value['frage_id'];
     }
+
     return $result;
 
 }
 
 
-function checkAntwort()
-{
-    $fragen = unserialize($_SESSION['fragenSets']);
-    $frageNr = $_SESSION['fragenNr'];
+function checkAntwort() {
+    $fragen    = unserialize($_SESSION['fragenSets']);
+    $frageNr   = $_SESSION['fragenNr'];
     $antwortNr = $_REQUEST['answerNr'];
-    $test = $fragen[$frageNr]->getAntworten();
-    $isTrue = $test[$antwortNr]->getIstRichtig();
+    $test      = $fragen[$frageNr]->getAntworten();
+    $isTrue    = $test[$antwortNr]->getIstRichtig();
     //$_SESSION['fragenNr']++;
     addPoints($isTrue);
+
     return $isTrue;
 }
 
 
-function addPoints($isRight)
-{
+function addPoints($isRight) {
     if ($isRight == 1) {
         $_SESSION['richtigeAntworten']++;
     }
 }
 
-function getAnswers()
-{
-    $fragen = unserialize($_SESSION['fragenSets']);
-    $frageNr = $_SESSION['fragenNr'];
-    $isTrue = $test[$antwortNr]->getIstRichtig();
+function getAnswers() {
+    $fragen    = unserialize($_SESSION['fragenSets']);
+    $frageNr   = $_SESSION['fragenNr'];
+    $antwortNr = $_REQUEST['answerNr'];
+    $test      = $fragen[$frageNr]->getAntworten();
+    $isTrue    = $test[$antwortNr]->getIstRichtig();
     addPoints($isTrue);
-//    if ($frageNr>sizeof($fragen)){
-//       $_SESSION['phase']='endQuiz';
-//    }
-    return $fragen[--$frageNr]->getAnswerTruthList();
+    if ($frageNr > sizeof($fragen)) {
+        $_SESSION['phase'] = 'endQuiz';
+    }
+
+    /** @var FragenRunde $fragenRunde */
+    $fragenRunde = $fragen[--$frageNr];
+    return $fragenRunde->getAnswerTruthList();
 }
 
 
