@@ -1,0 +1,358 @@
+.ndrslider3-default-theme, .ndrslider3-stage-theme, .ndrslider3-stage-theme2, .ndrslider3-tvstage-theme, .ndrslider3-njoyxtra, .ndrslider3-gallery-theme, .ndrslider3-gallerystage-theme {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000; }
+  .ndrslider3-default-theme h1, .ndrslider3-stage-theme h1, .ndrslider3-stage-theme2 h1, .ndrslider3-tvstage-theme h1, .ndrslider3-njoyxtra h1, .ndrslider3-gallery-theme h1, .ndrslider3-gallerystage-theme h1 {
+    margin: 0; }
+  .ndrslider3-default-theme h2, .ndrslider3-stage-theme h2, .ndrslider3-stage-theme2 h2, .ndrslider3-tvstage-theme h2, .ndrslider3-njoyxtra h2, .ndrslider3-gallery-theme h2, .ndrslider3-gallerystage-theme h2 {
+    color: #fff; }
+  .ndrslider3-default-theme .control, .ndrslider3-stage-theme .control, .ndrslider3-stage-theme2 .control, .ndrslider3-tvstage-theme .control, .ndrslider3-njoyxtra .control, .ndrslider3-gallery-theme .control, .ndrslider3-gallerystage-theme .control {
+    text-align: center; }
+  .ndrslider3-default-theme .wrapper-outer, .ndrslider3-stage-theme .wrapper-outer, .ndrslider3-stage-theme2 .wrapper-outer, .ndrslider3-tvstage-theme .wrapper-outer, .ndrslider3-njoyxtra .wrapper-outer, .ndrslider3-gallery-theme .wrapper-outer, .ndrslider3-gallerystage-theme .wrapper-outer {
+    position: relative;
+    overflow: hidden;
+    background: #0c1754; }
+  .ndrslider3-default-theme .wrapper, .ndrslider3-stage-theme .wrapper, .ndrslider3-stage-theme2 .wrapper, .ndrslider3-tvstage-theme .wrapper, .ndrslider3-njoyxtra .wrapper, .ndrslider3-gallery-theme .wrapper, .ndrslider3-gallerystage-theme .wrapper {
+    overflow: hidden;
+    float: left;
+    padding-left: 1px; }
+  .ndrslider3-default-theme .buttons, .ndrslider3-stage-theme .buttons, .ndrslider3-stage-theme2 .buttons, .ndrslider3-tvstage-theme .buttons, .ndrslider3-njoyxtra .buttons, .ndrslider3-gallery-theme .buttons, .ndrslider3-gallerystage-theme .buttons {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 3; }
+  .ndrslider3-default-theme .pagingbuttons .pagingprev, .ndrslider3-default-theme .pagingbuttons .pagingnext, .ndrslider3-default-theme .buttons .prev, .ndrslider3-default-theme .buttons .next, .ndrslider3-stage-theme .pagingbuttons .pagingprev, .ndrslider3-stage-theme .pagingbuttons .pagingnext, .ndrslider3-stage-theme .buttons .prev, .ndrslider3-stage-theme .buttons .next, .ndrslider3-stage-theme2 .pagingbuttons .pagingprev, .ndrslider3-stage-theme2 .pagingbuttons .pagingnext, .ndrslider3-stage-theme2 .buttons .prev, .ndrslider3-stage-theme2 .buttons .next, .ndrslider3-tvstage-theme .pagingbuttons .pagingprev, .ndrslider3-tvstage-theme .pagingbuttons .pagingnext, .ndrslider3-tvstage-theme .buttons .prev, .ndrslider3-tvstage-theme .buttons .next, .ndrslider3-njoyxtra .pagingbuttons .pagingprev, .ndrslider3-njoyxtra .pagingbuttons .pagingnext, .ndrslider3-njoyxtra .buttons .prev, .ndrslider3-njoyxtra .buttons .next, .ndrslider3-gallery-theme .pagingbuttons .pagingprev, .ndrslider3-gallery-theme .pagingbuttons .pagingnext, .ndrslider3-gallery-theme .buttons .prev, .ndrslider3-gallery-theme .buttons .next, .ndrslider3-gallerystage-theme .pagingbuttons .pagingprev, .ndrslider3-gallerystage-theme .pagingbuttons .pagingnext, .ndrslider3-gallerystage-theme .buttons .prev, .ndrslider3-gallerystage-theme .buttons .next {
+    color: #fff;
+    height: 100%;
+    position: absolute;
+    vertical-align: middle;
+    background: rgba(37, 115, 180, 0.6);
+    width: 48px;
+    display: table-cell;
+    vertical-align: middle;
+    cursor: pointer;
+    filter: Alpha(opacity=60);
+    line-height: 1.7em; }
+  .ndrslider3-default-theme .buttons .prev, .ndrslider3-default-theme .buttons .next, .ndrslider3-stage-theme .buttons .prev, .ndrslider3-stage-theme .buttons .next, .ndrslider3-stage-theme2 .buttons .prev, .ndrslider3-stage-theme2 .buttons .next, .ndrslider3-tvstage-theme .buttons .prev, .ndrslider3-tvstage-theme .buttons .next, .ndrslider3-njoyxtra .buttons .prev, .ndrslider3-njoyxtra .buttons .next, .ndrslider3-gallery-theme .buttons .prev, .ndrslider3-gallery-theme .buttons .next, .ndrslider3-gallerystage-theme .buttons .prev, .ndrslider3-gallerystage-theme .buttons .next {
+    background: none; }
+  .ndrslider3-default-theme .pagingbuttons .pagingprev, .ndrslider3-default-theme .buttons .prev, .ndrslider3-stage-theme .pagingbuttons .pagingprev, .ndrslider3-stage-theme .buttons .prev, .ndrslider3-stage-theme2 .pagingbuttons .pagingprev, .ndrslider3-stage-theme2 .buttons .prev, .ndrslider3-tvstage-theme .pagingbuttons .pagingprev, .ndrslider3-tvstage-theme .buttons .prev, .ndrslider3-njoyxtra .pagingbuttons .pagingprev, .ndrslider3-njoyxtra .buttons .prev, .ndrslider3-gallery-theme .pagingbuttons .pagingprev, .ndrslider3-gallery-theme .buttons .prev, .ndrslider3-gallerystage-theme .pagingbuttons .pagingprev, .ndrslider3-gallerystage-theme .buttons .prev {
+    left: 0; }
+  .ndrslider3-default-theme .pagingbuttons .pagingnext, .ndrslider3-default-theme .buttons .next, .ndrslider3-stage-theme .pagingbuttons .pagingnext, .ndrslider3-stage-theme .buttons .next, .ndrslider3-stage-theme2 .pagingbuttons .pagingnext, .ndrslider3-stage-theme2 .buttons .next, .ndrslider3-tvstage-theme .pagingbuttons .pagingnext, .ndrslider3-tvstage-theme .buttons .next, .ndrslider3-njoyxtra .pagingbuttons .pagingnext, .ndrslider3-njoyxtra .buttons .next, .ndrslider3-gallery-theme .pagingbuttons .pagingnext, .ndrslider3-gallery-theme .buttons .next, .ndrslider3-gallerystage-theme .pagingbuttons .pagingnext, .ndrslider3-gallerystage-theme .buttons .next {
+    right: 0; }
+  .ndrslider3-default-theme .pagingbuttons .pagingprev:hover, .ndrslider3-default-theme .pagingbuttons .pagingnext:hover, .ndrslider3-default-theme .buttons.prev:hover, .ndrslider3-default-theme .buttons .next:hover, .ndrslider3-stage-theme .pagingbuttons .pagingprev:hover, .ndrslider3-stage-theme .pagingbuttons .pagingnext:hover, .ndrslider3-stage-theme .buttons.prev:hover, .ndrslider3-stage-theme .buttons .next:hover, .ndrslider3-stage-theme2 .pagingbuttons .pagingprev:hover, .ndrslider3-stage-theme2 .pagingbuttons .pagingnext:hover, .ndrslider3-stage-theme2 .buttons.prev:hover, .ndrslider3-stage-theme2 .buttons .next:hover, .ndrslider3-tvstage-theme .pagingbuttons .pagingprev:hover, .ndrslider3-tvstage-theme .pagingbuttons .pagingnext:hover, .ndrslider3-tvstage-theme .buttons.prev:hover, .ndrslider3-tvstage-theme .buttons .next:hover, .ndrslider3-njoyxtra .pagingbuttons .pagingprev:hover, .ndrslider3-njoyxtra .pagingbuttons .pagingnext:hover, .ndrslider3-njoyxtra .buttons.prev:hover, .ndrslider3-njoyxtra .buttons .next:hover, .ndrslider3-gallery-theme .pagingbuttons .pagingprev:hover, .ndrslider3-gallery-theme .pagingbuttons .pagingnext:hover, .ndrslider3-gallery-theme .buttons.prev:hover, .ndrslider3-gallery-theme .buttons .next:hover, .ndrslider3-gallerystage-theme .pagingbuttons .pagingprev:hover, .ndrslider3-gallerystage-theme .pagingbuttons .pagingnext:hover, .ndrslider3-gallerystage-theme .buttons.prev:hover, .ndrslider3-gallerystage-theme .buttons .next:hover {
+    opacity: 1; }
+  .ndrslider3-default-theme .slidercover .icon, .ndrslider3-stage-theme .slidercover .icon, .ndrslider3-stage-theme2 .slidercover .icon, .ndrslider3-tvstage-theme .slidercover .icon, .ndrslider3-njoyxtra .slidercover .icon, .ndrslider3-gallery-theme .slidercover .icon, .ndrslider3-gallerystage-theme .slidercover .icon {
+    margin-top: -16px;
+    top: 50%;
+    display: block;
+    bottom: 0;
+    width: 1em;
+    position: absolute;
+    font-size: 48px; }
+  .ndrslider3-default-theme .slidercover, .ndrslider3-stage-theme .slidercover, .ndrslider3-stage-theme2 .slidercover, .ndrslider3-tvstage-theme .slidercover, .ndrslider3-njoyxtra .slidercover, .ndrslider3-gallery-theme .slidercover, .ndrslider3-gallerystage-theme .slidercover {
+    -webkit-transform: translateZ(0); }
+    .ndrslider3-default-theme .slidercover .icon, .ndrslider3-stage-theme .slidercover .icon, .ndrslider3-stage-theme2 .slidercover .icon, .ndrslider3-tvstage-theme .slidercover .icon, .ndrslider3-njoyxtra .slidercover .icon, .ndrslider3-gallery-theme .slidercover .icon, .ndrslider3-gallerystage-theme .slidercover .icon {
+      opacity: 0.7; }
+  .ndrslider3-default-theme .slidercover.disabled, .ndrslider3-default-theme .slidercover:hover.disabled, .ndrslider3-stage-theme .slidercover.disabled, .ndrslider3-stage-theme .slidercover:hover.disabled, .ndrslider3-stage-theme2 .slidercover.disabled, .ndrslider3-stage-theme2 .slidercover:hover.disabled, .ndrslider3-tvstage-theme .slidercover.disabled, .ndrslider3-tvstage-theme .slidercover:hover.disabled, .ndrslider3-njoyxtra .slidercover.disabled, .ndrslider3-njoyxtra .slidercover:hover.disabled, .ndrslider3-gallery-theme .slidercover.disabled, .ndrslider3-gallery-theme .slidercover:hover.disabled, .ndrslider3-gallerystage-theme .slidercover.disabled, .ndrslider3-gallerystage-theme .slidercover:hover.disabled {
+    cursor: default; }
+    .ndrslider3-default-theme .slidercover.disabled .icon, .ndrslider3-default-theme .slidercover:hover.disabled .icon, .ndrslider3-stage-theme .slidercover.disabled .icon, .ndrslider3-stage-theme .slidercover:hover.disabled .icon, .ndrslider3-stage-theme2 .slidercover.disabled .icon, .ndrslider3-stage-theme2 .slidercover:hover.disabled .icon, .ndrslider3-tvstage-theme .slidercover.disabled .icon, .ndrslider3-tvstage-theme .slidercover:hover.disabled .icon, .ndrslider3-njoyxtra .slidercover.disabled .icon, .ndrslider3-njoyxtra .slidercover:hover.disabled .icon, .ndrslider3-gallery-theme .slidercover.disabled .icon, .ndrslider3-gallery-theme .slidercover:hover.disabled .icon, .ndrslider3-gallerystage-theme .slidercover.disabled .icon, .ndrslider3-gallerystage-theme .slidercover:hover.disabled .icon {
+      opacity: 0; }
+  .ndrslider3-default-theme .item, .ndrslider3-stage-theme .item, .ndrslider3-stage-theme2 .item, .ndrslider3-tvstage-theme .item, .ndrslider3-njoyxtra .item, .ndrslider3-gallery-theme .item, .ndrslider3-gallerystage-theme .item {
+    overflow: hidden;
+    float: left; }
+  .ndrslider3-default-theme .pager, .ndrslider3-stage-theme .pager, .ndrslider3-stage-theme2 .pager, .ndrslider3-tvstage-theme .pager, .ndrslider3-njoyxtra .pager, .ndrslider3-gallery-theme .pager, .ndrslider3-gallerystage-theme .pager {
+    text-align: center;
+    background: #fff;
+    width: 100%;
+    -wwebkit-transform: translateZ(0); }
+  .ndrslider3-default-theme .page, .ndrslider3-stage-theme .page, .ndrslider3-stage-theme2 .page, .ndrslider3-tvstage-theme .page, .ndrslider3-njoyxtra .page, .ndrslider3-gallery-theme .page, .ndrslider3-gallerystage-theme .page {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    cursor: pointer;
+    -webkit-transform: translateZ(0); }
+  .ndrslider3-default-theme .page span, .ndrslider3-stage-theme .page span, .ndrslider3-stage-theme2 .page span, .ndrslider3-tvstage-theme .page span, .ndrslider3-njoyxtra .page span, .ndrslider3-gallery-theme .page span, .ndrslider3-gallerystage-theme .page span {
+    display: block;
+    width: 100% !important;
+    height: 10px;
+    margin: 8px 4px;
+    opacity: 0.2;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background: #0c1754;
+    filter: Alpha(opacity=20);
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    -wwebkit-transform: translateZ(0); }
+  .ndrslider3-default-theme .page.active span,
+  .ndrslider3-default-theme .page:hover span, .ndrslider3-stage-theme .page.active span,
+  .ndrslider3-stage-theme .page:hover span, .ndrslider3-stage-theme2 .page.active span,
+  .ndrslider3-stage-theme2 .page:hover span, .ndrslider3-tvstage-theme .page.active span,
+  .ndrslider3-tvstage-theme .page:hover span, .ndrslider3-njoyxtra .page.active span,
+  .ndrslider3-njoyxtra .page:hover span, .ndrslider3-gallery-theme .page.active span,
+  .ndrslider3-gallery-theme .page:hover span, .ndrslider3-gallerystage-theme .page.active span,
+  .ndrslider3-gallerystage-theme .page:hover span {
+    opacity: 1;
+    filter: Alpha(opacity=100); }
+  .ndrslider3-default-theme .page span:hover, .ndrslider3-stage-theme .page span:hover, .ndrslider3-stage-theme2 .page span:hover, .ndrslider3-tvstage-theme .page span:hover, .ndrslider3-njoyxtra .page span:hover, .ndrslider3-gallery-theme .page span:hover, .ndrslider3-gallerystage-theme .page span:hover {
+    background-color: #fff; }
+  .ndrslider3-default-theme .page span.counter, .ndrslider3-stage-theme .page span.counter, .ndrslider3-stage-theme2 .page span.counter, .ndrslider3-tvstage-theme .page span.counter, .ndrslider3-njoyxtra .page span.counter, .ndrslider3-gallery-theme .page span.counter, .ndrslider3-gallerystage-theme .page span.counter {
+    height: auto;
+    width: auto;
+    color: #FFF;
+    padding: 2px 10px;
+    font-size: 12px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px; }
+  .ndrslider3-default-theme .w20, .ndrslider3-default-theme .w33, .ndrslider3-default-theme .w50, .ndrslider3-default-theme .w66, .ndrslider3-stage-theme .w20, .ndrslider3-stage-theme .w33, .ndrslider3-stage-theme .w50, .ndrslider3-stage-theme .w66, .ndrslider3-stage-theme2 .w20, .ndrslider3-stage-theme2 .w33, .ndrslider3-stage-theme2 .w50, .ndrslider3-stage-theme2 .w66, .ndrslider3-tvstage-theme .w20, .ndrslider3-tvstage-theme .w33, .ndrslider3-tvstage-theme .w50, .ndrslider3-tvstage-theme .w66, .ndrslider3-njoyxtra .w20, .ndrslider3-njoyxtra .w33, .ndrslider3-njoyxtra .w50, .ndrslider3-njoyxtra .w66, .ndrslider3-gallery-theme .w20, .ndrslider3-gallery-theme .w33, .ndrslider3-gallery-theme .w50, .ndrslider3-gallery-theme .w66, .ndrslider3-gallerystage-theme .w20, .ndrslider3-gallerystage-theme .w33, .ndrslider3-gallerystage-theme .w50, .ndrslider3-gallerystage-theme .w66 {
+    margin-right: 0 !important; }
+  .ndrslider3-default-theme .pager, .ndrslider3-stage-theme .pager, .ndrslider3-stage-theme2 .pager, .ndrslider3-tvstage-theme .pager, .ndrslider3-njoyxtra .pager, .ndrslider3-gallery-theme .pager, .ndrslider3-gallerystage-theme .pager {
+    display: table; }
+    .ndrslider3-default-theme .pager .page, .ndrslider3-stage-theme .pager .page, .ndrslider3-stage-theme2 .pager .page, .ndrslider3-tvstage-theme .pager .page, .ndrslider3-njoyxtra .pager .page, .ndrslider3-gallery-theme .pager .page, .ndrslider3-gallerystage-theme .pager .page {
+      display: table-cell; }
+      .ndrslider3-default-theme .pager .page span, .ndrslider3-stage-theme .pager .page span, .ndrslider3-stage-theme2 .pager .page span, .ndrslider3-tvstage-theme .pager .page span, .ndrslider3-njoyxtra .pager .page span, .ndrslider3-gallery-theme .pager .page span, .ndrslider3-gallerystage-theme .pager .page span {
+        width: auto;
+        margin: 0;
+        border-radius: none;
+        -webkit-border-radius: none; }
+  .ndrslider3-default-theme .boxhead, .ndrslider3-stage-theme .boxhead, .ndrslider3-stage-theme2 .boxhead, .ndrslider3-tvstage-theme .boxhead, .ndrslider3-njoyxtra .boxhead, .ndrslider3-gallery-theme .boxhead, .ndrslider3-gallerystage-theme .boxhead {
+    background-color: #fff;
+    color: #333;
+    font-size: 1.2em;
+    margin: 0;
+    color: #333;
+    text-transform: uppercase;
+    border-bottom: 4px solid #2568b4;
+    margin-top: 0;
+    padding: 0.2em 0 0.2em 0; }
+
+.ndrslider3-stage-theme .pagingprev, .ndrslider3-stage-theme .pagingnext, .ndrslider3-stage-theme2 .pagingprev, .ndrslider3-stage-theme2 .pagingnext, .ndrslider3-tvstage-theme .pagingprev, .ndrslider3-tvstage-theme .pagingnext {
+  color: #fff;
+  height: 100%;
+  position: absolute;
+  vertical-align: middle;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 28px;
+  display: table-cell;
+  vertical-align: middle;
+  cursor: pointer;
+  background: transparent !important; }
+.ndrslider3-stage-theme .wrapper-outer, .ndrslider3-stage-theme2 .wrapper-outer, .ndrslider3-tvstage-theme .wrapper-outer {
+  background: none; }
+.ndrslider3-stage-theme .slidercover, .ndrslider3-stage-theme2 .slidercover, .ndrslider3-tvstage-theme .slidercover {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0; }
+  .ndrslider3-stage-theme .slidercover .icon, .ndrslider3-stage-theme2 .slidercover .icon, .ndrslider3-tvstage-theme .slidercover .icon {
+    color: #fff;
+    text-decoration: none;
+    font-size: 48px;
+    position: absolute;
+    left: 0em;
+    opacity: 0.8;
+    filter: Alpha(opacity=80);
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
+.ndrslider3-stage-theme .slidercover.forward, .ndrslider3-stage-theme2 .slidercover.forward, .ndrslider3-tvstage-theme .slidercover.forward {
+  left: auto;
+  right: 0; }
+  .ndrslider3-stage-theme .slidercover.forward .icon, .ndrslider3-stage-theme2 .slidercover.forward .icon, .ndrslider3-tvstage-theme .slidercover.forward .icon {
+    left: auto;
+    right: 0;
+    margin-right: 0; }
+.ndrslider3-stage-theme .slidercover:hover, .ndrslider3-stage-theme .slidercover:focus, .ndrslider3-stage-theme2 .slidercover:hover, .ndrslider3-stage-theme2 .slidercover:focus, .ndrslider3-tvstage-theme .slidercover:hover, .ndrslider3-tvstage-theme .slidercover:focus {
+  text-decoration: none; }
+  .ndrslider3-stage-theme .slidercover:hover .icon, .ndrslider3-stage-theme .slidercover:focus .icon, .ndrslider3-stage-theme2 .slidercover:hover .icon, .ndrslider3-stage-theme2 .slidercover:focus .icon, .ndrslider3-tvstage-theme .slidercover:hover .icon, .ndrslider3-tvstage-theme .slidercover:focus .icon {
+    opacity: 1;
+    filter: Alpha(opacity=100);
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
+
+.ndrslider3-stage-theme2 .pagingprev, .ndrslider3-stage-theme2 .pagingnext {
+  color: #fff;
+  height: 100%;
+  position: absolute;
+  top: 8%;
+  vertical-align: middle;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 28px;
+  display: table-cell;
+  cursor: pointer;
+  background: transparent;
+  margin-top: -150px; }
+
+.ndrslider3-tvstage-theme .wrapper-outer {
+  background: none; }
+.ndrslider3-tvstage-theme .pagingbuttons .pagingprev, .ndrslider3-tvstage-theme .pagingbuttons .pagingnext, .ndrslider3-tvstage-theme .buttons .prev, .ndrslider3-tvstage-theme .buttons .next {
+  color: #fff;
+  height: 100%;
+  position: absolute;
+  vertical-align: middle;
+  background: rgba(37, 115, 180, 0.6) !important;
+  width: 24px;
+  display: table-cell;
+  vertical-align: middle;
+  cursor: pointer;
+  filter: Alpha(opacity=60);
+  line-height: 1.7em; }
+.ndrslider3-tvstage-theme .teaserimage {
+  border-bottom: none !important; }
+.ndrslider3-tvstage-theme .teaserborder {
+  height: 5px;
+  background: #2573b4; }
+.ndrslider3-tvstage-theme .progressbar {
+  height: 5px;
+  bottom: 0; }
+  .ndrslider3-tvstage-theme .progressbar .progress-indicator {
+    height: 5px; }
+.ndrslider3-tvstage-theme h1.time {
+  display: block;
+  padding-left: 0.35em !important; }
+.ndrslider3-tvstage-theme .pager {
+  display: table; }
+  .ndrslider3-tvstage-theme .pager .page {
+    display: table-cell; }
+    .ndrslider3-tvstage-theme .pager .page span {
+      width: auto;
+      margin: 0;
+      border-radius: none;
+      -webkit-border-radius: none; }
+
+.ndrslider3-njoyxtra .wrapper-outer {
+  background: none; }
+.ndrslider3-njoyxtra .teaserpadding {
+  background-color: #60700a; }
+.ndrslider3-njoyxtra .teaserimage {
+  border-bottom: 5px solid #60700a !important; }
+.ndrslider3-njoyxtra .pager {
+  background: #a0bb16 url(http://www.n-joy.de/resources/images/textures/specialgrunge_bottom_right_white.png) bottom right no-repeat; }
+.ndrslider3-njoyxtra .pagingprev, .ndrslider3-njoyxtra .pagingnext {
+  background: #49550d;
+  background: rgba(73, 85, 13, 0.5); }
+
+.njoyxtramodule h1 {
+  background: #60700a url(http://www.n-joy.de/resources/images/textures/boxhead_grungemask_special.png) right -37px no-repeat;
+  border-bottom: 5px solid #bcda22;
+  margin-bottom: 0; }
+  .njoyxtramodule h1 span {
+    color: #fff;
+    font-size: 1.8em;
+    display: block;
+    position: relative;
+    top: 0em; }
+.njoyxtramodule h2 {
+  text-transform: uppercase; }
+
+.ndrslider3-gallery-theme, .ndrslider3-gallerystage-theme {
+  position: relative;
+  padding: 0 !important; }
+  .ndrslider3-gallery-theme .wrapper, .ndrslider3-gallerystage-theme .wrapper {
+    padding-left: 0.001px; }
+  .ndrslider3-gallery-theme .wrapper-outer, .ndrslider3-gallerystage-theme .wrapper-outer {
+    background: none;
+    background-color: #fff;
+    z-index: 0; }
+  .ndrslider3-gallery-theme .slidercover .icon, .ndrslider3-gallerystage-theme .slidercover .icon {
+    opacity: 0.8;
+    filter: Alpha(opacity=80);
+    -webkit-transition: opacity 0.7s;
+    transition: opacity 0.7s;
+    font-size: 48px;
+    margin-top: -12px;
+    top: 50%;
+    position: absolute; }
+  .ndrslider3-gallery-theme .slidercover:hover .icon, .ndrslider3-gallery-theme .slidercover:focus .icon, .ndrslider3-gallerystage-theme .slidercover:hover .icon, .ndrslider3-gallerystage-theme .slidercover:focus .icon {
+    opacity: 1;
+    filter: Alpha(opacity=100);
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    font-size: 48px; }
+  .ndrslider3-gallery-theme .slidercover.disabled, .ndrslider3-gallerystage-theme .slidercover.disabled {
+    display: none !important; }
+  .ndrslider3-gallery-theme .buttons .prev, .ndrslider3-gallery-theme .buttons .next, .ndrslider3-gallerystage-theme .buttons .prev, .ndrslider3-gallerystage-theme .buttons .next {
+    width: 50%; }
+  .ndrslider3-gallery-theme .pagingbuttons .pagingprev, .ndrslider3-gallery-theme .pagingbuttons .pagingnext, .ndrslider3-gallerystage-theme .pagingbuttons .pagingprev, .ndrslider3-gallerystage-theme .pagingbuttons .pagingnext {
+    color: #fff;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 48px;
+    display: table-cell;
+    cursor: pointer;
+    background: transparent !important; }
+  .ndrslider3-gallery-theme .buttons .next .icon, .ndrslider3-gallery-theme .pagingbuttons .pagingnext, .ndrslider3-gallerystage-theme .buttons .next .icon, .ndrslider3-gallerystage-theme .pagingbuttons .pagingnext {
+    right: 0;
+    margin-right: 0;
+    text-shadow: 0 -1px 5px black, 0 1px 3px #cccccc;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=90, Color='#000000')"; }
+  .ndrslider3-gallery-theme .buttons .prev .icon, .ndrslider3-gallery-theme .pagingbuttons .pagingprev, .ndrslider3-gallerystage-theme .buttons .prev .icon, .ndrslider3-gallerystage-theme .pagingbuttons .pagingprev {
+    left: 0;
+    margin-left: 0;
+    text-shadow: 0 -1px 5px black, 0 1px 1px #cccccc;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=90, Color='#000000')"; }
+  .ndrslider3-gallery-theme .item, .ndrslider3-gallerystage-theme .item {
+    -webkit-box-shadow: inset 0px 0px 0px 3px rgba(255, 255, 255, 0);
+    box-shadow: inset 0px 0px 0px 3px rgba(255, 255, 255, 0);
+    cursor: pointer; }
+  .ndrslider3-gallery-theme .item, .ndrslider3-gallerystage-theme .item {
+    clear: none;
+    margin-bottom: 0; }
+    .ndrslider3-gallery-theme .item img, .ndrslider3-gallerystage-theme .item img {
+      width: 100%;
+      height: auto !important; }
+    .ndrslider3-gallery-theme .item .caption, .ndrslider3-gallerystage-theme .item .caption {
+      display: block;
+      color: #333;
+      background: #fff;
+      font-weight: 400;
+      font-size: 0.8em;
+      font-family: arial, helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      padding-top: 0.5em;
+      padding-bottom: 1em;
+      line-height: 1.2em;
+      min-height: 3em; }
+  .ndrslider3-gallery-theme .item.active, .ndrslider3-gallerystage-theme .item.active {
+    -webkit-box-shadow: inset 0px 0px 0px 3px rgba(255, 255, 255, 0.7);
+    box-shadow: inset 0px 0px 0px 3px rgba(255, 255, 255, 0.7); }
+  .ndrslider3-gallery-theme .item.active .image-container, .ndrslider3-gallerystage-theme .item.active .image-container {
+    z-index: -1; }
+  .ndrslider3-gallery-theme .counter, .ndrslider3-gallerystage-theme .counter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.8em;
+    font-weight: bold;
+    z-index: 1;
+    background-color: white;
+    background: rgba(255, 255, 255, 0.6);
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    color: #0c327d; }
+
+.ndrslider3-gallerystage-theme .item {
+  cursor: initial; }
+.ndrslider3-gallerystage-theme .item.active {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+.ndrslider3-gallerystage-theme .item.active .image-container {
+  z-index: 1; }

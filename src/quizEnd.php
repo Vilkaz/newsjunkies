@@ -17,10 +17,10 @@ require_once('view/main_header.php');
                 $alle =   sizeof(unserialize($_SESSION['fragenSets']));
         $procent = $richtig/$alle*100;
         ?>
-        Sie haben  <?php echo($richtig) ?> Fragen von <?php  echo($alle) ?>richtig beantwortet ! (<?php echo($procent); ?>%)
+        Sie haben  <?php echo($richtig) ?> Fragen von <?php  echo($alle) ?>richtig beantwortet !
         <br>
 
-        Somit liegen sie auf heutigem Platz 1 in der gespielten Kategorie.
+
         <br>
 
         <form action="quiz2.php">

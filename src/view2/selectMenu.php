@@ -1,8 +1,6 @@
 
     <div id="njInnerContent">
-        <h3>Herzlich wilkommen auf der Newsjunkie Seite ! </h3></br>
-        <label>Haben Sie bei unserer Sendung gut aufgepasst ? Hier finden wir es gemeinsam raus !</label></br>
-        <label>Bitte wählen Sie in welcher Kategorie Ihr Wissen geprüft werden soll !</label></br></br>
+        <img src="img/news-junkies_logo.png" width="650" height="250" style="margin-left: 50px">
         <form id="njForm">
             <div class="njRubrikCheckbox">
                 <label for="njBildertest">Bildertest</label>

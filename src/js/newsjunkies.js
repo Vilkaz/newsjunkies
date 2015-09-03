@@ -128,14 +128,16 @@ function progress(timeleft, timetotal, $element) {
         .find('div')
         .animate({ width: progressBarWidth }, timeleft == timetotal ? 0 : 1000, 'linear')
     //.html(timeleft);  //es zeigt die Zeit in Sekuden IM Balken an
-    if (timeleft >= 0 && checkProgressBar()) {
+    if (timeleft > 0 && checkProgressBar()) {
         setTimeout(function () {
             progress(timeleft - 1, timetotal, $element);
         }, 1000);
-    } else {
+    }
+
+    else {
         if (timeleft <= 0 ){
             stopProgressbar();
-            checkResults();
+            checkResults2(-1);
         }
 
     }
@@ -198,7 +200,6 @@ function getRightAnswerFromData(data) {
 function markButtonRight(questionNr) {
     $('#njAnswer' + (questionNr + 1)).on('click', '').css({
         'background-color': 'green',
-        'fontSize': '35px',
         'fontFamily': 'bold'
     }).effect('highlight');
 
@@ -213,7 +214,7 @@ function markButtonWrong(questionNr) {
 
 
 function countdown() {
-    var counter = 4;
+    var counter = 2;
     var interval = setInterval(function () {
         counter--;
         $('#countdown').html('&nbsp&nbsp&nbsp&nbsp weiter in ' + counter + ' Sekunden');

@@ -19,7 +19,7 @@ $textBackground: #FEFEFF;
 
 
 body{
-  background-color: #f0ece5;
+  background-color: #2568b4;
 }
 
 #njLogo_img{
@@ -28,7 +28,7 @@ body{
 }
 
 #njInnerContent{
-  background-color: #FEFEFF;
+  background-color: #2568B4;
 }
 
 #progressBar {
@@ -62,7 +62,8 @@ body{
 
 #textQuestion{
   width: 550px;
-  height: 100px;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 #submitQuestion{
@@ -107,7 +108,7 @@ body{
 
 #njMainContainer {
   padding: 10px 80px;
-  background-color: $textBackground;
+  background-color: #2568B4;
 }
 
 #njForm {

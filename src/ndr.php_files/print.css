@@ -1,0 +1,37 @@
+#pageheader, #footer, .inpagecomments .userinput, .projekktor, .skiplink, .noprint, #btt, .projekktor_holder, .overlay, #navigation, .copytext .ndrgallery, .copytext .projekktor_holder {
+  display: none !important; }
+
+.subbranding {
+  display: none; }
+
+.copytext .ndrgallery {
+  display: none; }
+
+.meta {
+  border-bottom: 0 none; }
+  .meta a {
+    display: none !important; }
+
+.topteaserfatlist .teaserpadding {
+  width: 30%; }
+
+#printbox {
+  display: block;
+  font-size: 0.8em;
+  border: 3px solid #ccc;
+  margin-bottom: 1em;
+  padding: 1em 2em;
+  line-height: 1.2em; }
+  #printbox img {
+    float: left;
+    text-align: bottom;
+    margin-right: 2em; }
+
+.print-nobox article {
+  width: 100% !important; }
+
+.print-nobox aside {
+  display: none; }
+
+.box .teaserpadding, .contentbox .teaserpadding {
+  border: 1px solid #e7eef6; }

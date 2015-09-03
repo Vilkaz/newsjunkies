@@ -42,10 +42,13 @@ function getAnswers() {
     $antwortTrueListe = $fragen[$frageNr]->getAnswerTruthList();
     $antworten        = $fragenRunde->getAntworten();
     /** @var Antwort $geklickteAntwort */
-    $geklickteAntwort = $antworten[$antwortNr];
-    if ($geklickteAntwort->getIstRichtig()) {
-        $_SESSION['richtigeAntworten']++;
+    if ($antwortNr!=-1){
+        $geklickteAntwort = $antworten[$antwortNr];
+          if ($geklickteAntwort->getIstRichtig()) {
+              $_SESSION['richtigeAntworten']++;
+          }
     }
+
     $_SESSION['fragenNr']++;
 
 

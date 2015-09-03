@@ -9,7 +9,6 @@ $_SESSION['quizGestartet'] = 'NEW';
 require_once('view/main_header.php');
 ?>
   <div id="quiz2">
-  <img src="img/news-junkies_logo.png" width="100" height="50" style="margin-left: 50px">
     <div id="njMainContainer">
     <?php
     require_once('view2/selectMenu.php');

@@ -1,5 +1,5 @@
 $backgroundMain : f0ece5;
-$textBackground: #FEFEFF;
+$textBackground: #0c1754;
 
 //rework
 
@@ -33,14 +33,14 @@ body{
 }
 
 #njInnerContent{
-  background-color: #FEFEFF;
+  background-color: #2568B4;
 }
 
 #progressBar {
   width: 600px;
   height: 22px;
   border: 1px solid #111;
-  background-color: #CECECE;
+  background-color: #0C1754;
   border-radius: 5px;
   margin-bottom: 10px;
 }
@@ -67,7 +67,9 @@ body{
 
 #textQuestion{
   width: 550px;
-  height: 250px;
+  font-weight: bold;
+  font-size: 20px;
+  height: 50px;
 }
 
 #submitQuestion{
@@ -82,6 +84,7 @@ body{
 }
 
 .njQuizAnswerButton{
+  background-color: aqua;
   width:250px;
   height: 100px;
   font-size: 18px;
@@ -114,7 +117,7 @@ body{
   margin-left: 5%;
   width: 700px;
   padding: 10px 40px;
-  background-color: $textBackground;
+  background-color: #2568B4;
 }
 
 #njForm {
