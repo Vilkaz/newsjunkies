@@ -15,8 +15,6 @@ session_start();
 require_once 'classes/myAutoloader.php';
 
 
-var_dump($_REQUEST);
-
 $action = $_REQUEST['action'];
 //$data = $_REQUEST['data'];
 
@@ -77,7 +75,7 @@ function FrageSpeichern() {
     FrageDao::setFragenRubrik($frageID, getRubrikID());
 
 
-    return ("alels gut");
+    return ("ok");
 
 }
 

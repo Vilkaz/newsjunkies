@@ -19,7 +19,9 @@ function saveQuestion() {
                 qtype: $('#qtype').val(),
                 mediaURL: $('#mediaURL').val()
             }, function (data) {
-                console.log(data);
+                if (data=="ok"){
+                    alert("Frage erfolgreich hinzugefügt!")
+                }
             }, 'json')
         } else {
             alert("bitte eine Antwort als richtig markieren");
